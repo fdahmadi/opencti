@@ -50,7 +50,7 @@ jobs:
         if: steps.detect.outputs.changed == 'true' && steps.webhook.conclusion == 'success'
         run: |
           git checkout main
-          git merge upstream/main --no-edit
+          git merge --no-ff upstream/main -m "Sync from upstream"
 
       - name: Push Changes
         if: steps.detect.outputs.changed == 'true' && steps.webhook.conclusion == 'success'
