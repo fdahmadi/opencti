@@ -554,6 +554,7 @@ const LeftBar = () => {
                   [
                     { granted: isGrantedToExplore, type: 'Dashboard', link: '/dashboard/workspaces/dashboards', label: 'Custom dashboards', exact: true },
                     { granted: isGrantedToExplore, type: 'Dashboard', link: '/dashboard/workspaces/dashboards_public', label: 'Public dashboards', exact: true },
+                    { granted: isGrantedToExplore, type: 'Dashboard', link: '/dashboard/workspaces/dashboards_ressa_dwm', label: 'Ressa DWM', exact: true },
                   ],
                 )}
               </>
