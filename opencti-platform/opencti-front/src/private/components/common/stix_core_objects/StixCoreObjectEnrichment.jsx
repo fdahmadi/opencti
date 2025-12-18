@@ -31,7 +31,7 @@ const StixCoreObjectEnrichment = ({ stixCoreObjectId, onClose, isOpen }) => {
             onClick={handleOpenEnrichment}
             value="enrich"
             size="small"
-            style={{ marginRight: 3 }}
+            style={{ marginInlineEnd: 3 }}
           >
             <CloudRefreshOutline fontSize="small" color="primary" />
           </ToggleButton>

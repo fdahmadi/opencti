@@ -146,10 +146,10 @@ class AddNotesLinesContainer extends Component {
                 primary={`${note.attribute_abstract} ${noteId}`}
                 secondary={truncate(note.content, 120)}
               />
-              <div style={{ marginRight: 50 }}>
+              <div style={{ marginInlineEnd: 50 }}>
                 {note.createdBy?.name ?? '-'}
               </div>
-              <div style={{ marginRight: 50 }}>
+              <div style={{ marginInlineEnd: 50 }}>
                 <ItemMarkings
                   variant="inList"
                   markingDefinitions={note.objectMarking ?? []}

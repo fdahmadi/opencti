@@ -105,7 +105,7 @@ const ChipMarking = ({
           fontSize: 12,
           lineHeight: '12px',
           borderRadius: 4,
-          marginRight: 7,
+          marginInlineEnd: 7,
           marginBottom: variant === 'inList' ? 0 : 7,
           height: variant === 'inList' ? 20 : 25,
           cursor: onClick ? 'pointer' : 'default',

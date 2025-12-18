@@ -307,7 +307,7 @@ const StixDomainObjectAttackPatternsKillChain: FunctionComponent<StixDomainObjec
         >
           <div
             style={{
-              float: 'left',
+              float: 'inline-start',
             }}
           >
             <SearchInput
@@ -319,11 +319,11 @@ const StixDomainObjectAttackPatternsKillChain: FunctionComponent<StixDomainObjec
           <Box
             style={{
               display: 'flex',
-              float: 'left',
+              float: 'inline-start',
               alignItems: 'center',
               flexWrap: 'wrap',
-              marginRight: 20,
-              marginLeft: 8,
+              marginInlineEnd: 20,
+              marginInlineStart: 8,
               gap: 10,
             }}
           >
@@ -335,7 +335,7 @@ const StixDomainObjectAttackPatternsKillChain: FunctionComponent<StixDomainObjec
           </Box>
           <Box
             style={{
-              float: 'left',
+              float: 'inline-start',
               display: 'flex',
               margin: '-6px 4px 0 0',
             }}
@@ -352,7 +352,7 @@ const StixDomainObjectAttackPatternsKillChain: FunctionComponent<StixDomainObjec
             <>
               <Box
                 style={{
-                  float: 'left',
+                  float: 'inline-start',
                   display: 'flex',
                   paddingInline: 10,
                   paddingBlock: 10,
@@ -378,7 +378,7 @@ const StixDomainObjectAttackPatternsKillChain: FunctionComponent<StixDomainObjec
               </Box>
               <Box
                 style={{
-                  float: 'left',
+                  float: 'inline-start',
                   display: 'flex',
                   marginBlockStart: -4,
                   paddingInline: 10,
@@ -406,7 +406,7 @@ const StixDomainObjectAttackPatternsKillChain: FunctionComponent<StixDomainObjec
               {!isSecurityPlatform && (
                 <Box
                   style={{
-                    float: 'left',
+                    float: 'inline-start',
                     display: 'flex',
                     paddingInline: 10,
                   }}
@@ -430,7 +430,7 @@ const StixDomainObjectAttackPatternsKillChain: FunctionComponent<StixDomainObjec
           )}
           {displayButtons
             && (
-              <div style={{ float: 'right', margin: 0 }} id="container-view-buttons">
+              <div style={{ float: 'inline-end', margin: 0 }} id="container-view-buttons">
                 <ToggleButtonGroup size="small" color="secondary" exclusive={true}>
                   {[...viewButtons]}
                   {typeof handleToggleExports === 'function' && (
@@ -460,7 +460,7 @@ const StixDomainObjectAttackPatternsKillChain: FunctionComponent<StixDomainObjec
 
                 <div
                   style={{
-                    float: 'right',
+                    float: 'inline-end',
                     margin: '0 0 0 20px',
                   }}
                 >

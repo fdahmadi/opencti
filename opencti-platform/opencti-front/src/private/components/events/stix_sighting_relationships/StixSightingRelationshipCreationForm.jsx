@@ -80,14 +80,14 @@ const useStyles = makeStyles((theme) => ({
   },
   buttonBack: {
     marginTop: 20,
-    float: 'left',
+    float: 'inline-start',
   },
   buttons: {
     marginTop: 20,
-    float: 'right',
+    float: 'inline-end',
   },
   button: {
-    marginLeft: theme.spacing(2),
+    marginInlineStart: theme.spacing(2),
   },
 }));
 

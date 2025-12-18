@@ -245,11 +245,11 @@ const Notifications: FunctionComponent = () => {
           none: t_i18n('Unknown'),
         };
         return (
-          <div style={{ height: 20, fontSize: 13, float: 'left', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis', paddingRight: 10 }}>
+          <div style={{ height: 20, fontSize: 13, float: 'inline-start', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis', paddingInlineEnd: 10 }}>
             <Chip
               style={{ fontSize: 12,
                 height: 20,
-                float: 'left',
+                float: 'inline-start',
                 width: 150,
                 textTransform: 'uppercase',
                 borderRadius: 4,
@@ -278,7 +278,7 @@ const Notifications: FunctionComponent = () => {
         const multipleEvents = events.length > 1;
 
         return (
-          <div style={{ height: 20, fontSize: 13, float: 'left', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis', paddingRight: 10 }}>
+          <div style={{ height: 20, fontSize: 13, float: 'inline-start', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis', paddingInlineEnd: 10 }}>
             {multipleEvents ? (
               <i>{t_i18n('Digest with multiple notifiers')}</i>
             ) : (
@@ -308,11 +308,11 @@ const Notifications: FunctionComponent = () => {
           <div style={{
             height: 20,
             fontSize: 13,
-            float: 'left',
+            float: 'inline-start',
             whiteSpace: 'nowrap',
             overflow: 'hidden',
             textOverflow: 'ellipsis',
-            paddingRight: 10,
+            paddingInlineEnd: 10,
           }}
           >
             <Tooltip title={name ?? '-'}>
@@ -320,7 +320,7 @@ const Notifications: FunctionComponent = () => {
                 style={{
                   ...chipInListBasicStyle,
                   width: 100,
-                  marginRight: 10,
+                  marginInlineEnd: 10,
                 }}
                 color={notification_type === 'live'
                   ? 'warning'
@@ -374,7 +374,7 @@ const Notifications: FunctionComponent = () => {
     };
 
     return (
-      <div style={{ marginLeft: -40 }}>
+      <div style={{ marginInlineStart: -40 }}>
         <Tooltip title={data.is_read ? t_i18n('Mark as unread') : t_i18n('Mark as read')}>
           <IconButton
             disabled={updating}

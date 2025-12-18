@@ -66,8 +66,8 @@ const AddLocationsThreatActorIndividualComponent: FunctionComponent<AddLocations
         header={(
           <div
             style={{
-              marginLeft: 'auto',
-              marginRight: '20px',
+              marginInlineStart: 'auto',
+              marginInlineEnd: '20px',
             }}
           >
             <SearchInput

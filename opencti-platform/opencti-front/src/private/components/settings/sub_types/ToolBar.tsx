@@ -41,7 +41,7 @@ const useStyles = makeStyles<Theme>((theme) => ({
   },
   titleNumber: {
     padding: '2px 5px 2px 5px',
-    marginRight: 5,
+    marginInlineEnd: 5,
     backgroundColor: theme.palette.secondary.main,
     color: '#ffffff',
   },
@@ -173,7 +173,7 @@ const ToolBar: FunctionComponent<{
       PaperProps={{
         variant: 'elevation',
         elevation: 1,
-        style: { paddingLeft: navOpen ? 185 : 60, bottom: bannerHeightNumber },
+        style: { paddingInlineStart: navOpen ? 185 : 60, bottom: bannerHeightNumber },
       }}
     >
       <Toolbar style={{ minHeight: 54 }}>

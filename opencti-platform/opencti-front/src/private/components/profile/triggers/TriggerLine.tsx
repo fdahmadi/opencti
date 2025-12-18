@@ -23,7 +23,7 @@ import { chipInListBasicStyle } from '../../../../utils/chipStyle';
 // Do not use it for new code.
 const useStyles = makeStyles<Theme>((theme) => ({
   item: {
-    paddingLeft: 10,
+    paddingInlineStart: 10,
     height: 50,
   },
   itemIcon: {
@@ -34,18 +34,18 @@ const useStyles = makeStyles<Theme>((theme) => ({
     display: 'flex',
     alignItems: 'center',
     fontSize: 13,
-    float: 'left',
+    float: 'inline-start',
     whiteSpace: 'nowrap',
     overflow: 'hidden',
     textOverflow: 'ellipsis',
-    paddingRight: 10,
+    paddingInlineEnd: 10,
   },
   filtersItem: {
     height: 40,
     display: 'flex',
     alignItems: 'center',
-    float: 'left',
-    paddingRight: 10,
+    float: 'inline-start',
+    paddingInlineEnd: 10,
   },
   itemIconDisabled: {
     color: theme.palette.grey?.[700],
@@ -53,7 +53,7 @@ const useStyles = makeStyles<Theme>((theme) => ({
   chipInList: {
     ...chipInListBasicStyle,
     width: 100,
-    marginRight: 10,
+    marginInlineEnd: 10,
   },
   chipInList2: {
     ...chipInListBasicStyle,
@@ -62,7 +62,7 @@ const useStyles = makeStyles<Theme>((theme) => ({
   chipInList3: {
     ...chipInListBasicStyle,
     width: undefined,
-    marginRight: 10,
+    marginInlineEnd: 10,
   },
 }));
 
@@ -166,7 +166,7 @@ export const TriggerLineComponent: FunctionComponent<TriggerLineProps> = ({
               {(data.notifiers
                 && data.notifiers.length > 0)
                 ? data.notifiers
-                    .map<React.ReactNode>((n) => <code key={n.id} style={{ marginRight: 5 }}>{n.name}</code>)
+                    .map<React.ReactNode>((n) => <code key={n.id} style={{ marginInlineEnd: 5 }}>{n.name}</code>)
                 : '-'
               }
             </div>

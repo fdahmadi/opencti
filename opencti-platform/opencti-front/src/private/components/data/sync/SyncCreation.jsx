@@ -37,10 +37,10 @@ const useStyles = makeStyles((theme) => ({
   buttons: {
     width: '100%',
     marginTop: 20,
-    textAlign: 'right',
+    textAlign: 'end',
   },
   button: {
-    marginLeft: theme.spacing(2),
+    marginInlineStart: theme.spacing(2),
   },
   alert: {
     width: '100%',
@@ -410,7 +410,7 @@ const SyncCreation = ({ paginationOptions }) => {
                     <Field
                       component={SwitchField}
                       type="checkbox"
-                      containerstyle={{ marginLeft: 2 }}
+                      containerstyle={{ marginInlineStart: 2 }}
                       name="synchronized"
                       label={t_i18n('Use perfect synchronization')}
                     />

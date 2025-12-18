@@ -71,8 +71,8 @@ const StixCoreObjectContentBar: FunctionComponent<
       >
         <div
           style={{
-            float: 'left',
-            marginLeft: navOpen ? 195 : 70,
+            float: 'inline-start',
+            marginInlineStart: navOpen ? 195 : 70,
             height: '100%',
             display: 'flex',
           }}

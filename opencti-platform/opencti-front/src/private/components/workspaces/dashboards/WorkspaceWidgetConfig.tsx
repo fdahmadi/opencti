@@ -51,7 +51,7 @@ const WorkspaceWidgetConfig = ({ widget, onComplete, closeMenu, handleImportWidg
               <Button
                 variant="outlined"
                 disableElevation
-                sx={{ marginLeft: 1 }}
+                sx={{ marginInlineStart: 1 }}
                 onClick={handleImportWidgetButtonClick}
               >
                 {t_i18n('Import Widget')}
@@ -59,7 +59,7 @@ const WorkspaceWidgetConfig = ({ widget, onComplete, closeMenu, handleImportWidg
               <Button
                 variant="outlined"
                 disableElevation
-                sx={{ marginLeft: 1 }}
+                sx={{ marginInlineStart: 1 }}
                 onClick={handleOpenWidgetConfig}
                 data-testid="create-widget-button"
               >

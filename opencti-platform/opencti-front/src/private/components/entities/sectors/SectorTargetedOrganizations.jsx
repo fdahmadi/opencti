@@ -29,20 +29,20 @@ const styles = (theme) => ({
     height: 50,
     minHeight: 50,
     maxHeight: 50,
-    paddingRight: 0,
+    paddingInlineEnd: 0,
   },
   itemText: {
     whiteSpace: 'nowrap',
     overflow: 'hidden',
     textOverflow: 'ellipsis',
-    paddingRight: 10,
+    paddingInlineEnd: 10,
   },
   itemIcon: {
-    marginRight: 0,
+    marginInlineEnd: 0,
     color: theme.palette.primary.main,
   },
   itemIconDisabled: {
-    marginRight: 0,
+    marginInlineEnd: 0,
     color: theme.palette.grey[700],
   },
 });
@@ -52,8 +52,8 @@ const inlineStyles = {
     width: 80,
     minWidth: 80,
     maxWidth: 80,
-    marginRight: 24,
-    marginLeft: 24,
+    marginInlineEnd: 24,
+    marginInlineStart: 24,
     whiteSpace: 'nowrap',
     overflow: 'hidden',
     textOverflow: 'ellipsis',
@@ -62,7 +62,7 @@ const inlineStyles = {
     width: 80,
     minWidth: 80,
     maxWidth: 80,
-    marginRight: 24,
+    marginInlineEnd: 24,
     whiteSpace: 'nowrap',
     overflow: 'hidden',
     textOverflow: 'ellipsis',
@@ -155,7 +155,7 @@ class SectorTargetedOrganizations extends Component {
                               <div style={inlineStyles.itemDate}>
                                 {fsd(relation.start_time)}
                               </div>
-                              <div style={{ width: 110, paddingRight: 20 }}>
+                              <div style={{ width: 110, paddingInlineEnd: 20 }}>
                                 <ItemMarkings
                                   variant="inList"
                                   markingDefinitions={relation.objectMarking ?? []}

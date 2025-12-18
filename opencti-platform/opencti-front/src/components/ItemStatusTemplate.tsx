@@ -31,7 +31,7 @@ const ItemStatusTemplate = ({ statuses, disabled }: ItemStatusTemplateProps) => 
         style={{ fontSize: 12,
           lineHeight: '12px',
           height: 25,
-          marginRight: 7,
+          marginInlineEnd: 7,
           textTransform: 'uppercase',
           borderRadius: 4,
           width: 100 }}
@@ -65,7 +65,7 @@ const ItemStatusTemplate = ({ statuses, disabled }: ItemStatusTemplateProps) => 
                       fontSize: 12,
                       lineHeight: '12px',
                       height: 25,
-                      marginRight: 7,
+                      marginInlineEnd: 7,
                       textTransform: 'uppercase',
                       borderRadius: 4,
                       width: 100,
@@ -82,7 +82,7 @@ const ItemStatusTemplate = ({ statuses, disabled }: ItemStatusTemplateProps) => 
           </div>
           {
             order < statusByOrder.length - 1 && (
-              <Box sx={{ display: 'flex', marginRight: 1 }}>
+              <Box sx={{ display: 'flex', marginInlineEnd: 1 }}>
                 <ArrowRightAltOutlined />
               </Box>
             )

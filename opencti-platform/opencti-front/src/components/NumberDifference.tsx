@@ -55,7 +55,7 @@ const NumberDifference = ({ value, description }: ItemNumberDifferenceProps) => 
           style={{
             fontSize: 9,
             color: theme.palette.text?.primary,
-            paddingLeft: theme.spacing(0.5),
+            paddingInlineStart: theme.spacing(0.5),
           }}
         >
           ({t_i18n(description)})

@@ -173,7 +173,7 @@ const ConnectorPopover = ({ connector, onRefreshData }: ConnectorPopoverProps) =
             sx={{ title: { display: 'none' } }}
             component={(
               <MenuItem onClick={handleOpenResetState} sx={{ color: theme.palette.dangerZone.main }}>
-                {t_i18n('Reset')}<DangerZoneChip style={{ marginLeft: 8 }} />
+                {t_i18n('Reset')}<DangerZoneChip style={{ marginInlineStart: 8 }} />
               </MenuItem>
             )}
           />

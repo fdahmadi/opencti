@@ -15,7 +15,7 @@ const useStyles = makeStyles(() => ({
     padding: '0 200px 50px 0',
   },
   parameters: {
-    float: 'left',
+    float: 'inline-start',
     marginBottom: 10,
   },
 }));
@@ -36,7 +36,7 @@ const Sessions = () => {
       <AccessesMenu />
       <Breadcrumbs elements={[{ label: t_i18n('Settings') }, { label: t_i18n('Security') }, { label: t_i18n('Sessions'), current: true }]} />
       <div className={classes.parameters}>
-        <div style={{ float: 'left', marginRight: 20 }}>
+        <div style={{ float: 'inline-start', marginInlineEnd: 20 }}>
           <SearchInput
             variant="small"
             onSubmit={helpers.handleSearch}

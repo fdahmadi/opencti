@@ -464,7 +464,7 @@ interface StixCoreRelationshipCreationFromEntityProps {
   defaultStopTime?: string;
   paginationOptions: Record<string, unknown>;
   connectionKey?: string;
-  paddingRight: number;
+  paddingInlineEnd: number;
   variant?: string;
   targetEntities?: TargetEntity[];
   onCreate?: () => void;
@@ -897,14 +897,14 @@ const StixCoreRelationshipCreationFromEntity: FunctionComponent<StixCoreRelation
           isFromBulkRelation={undefined}
           defaultMarkingDefinitions={undefined}
           stixDomainObjectTypes={actualTypeFilterValues}
-          controlledDialStyles={{ marginRight: '10px' }}
+          controlledDialStyles={{ marginInlineEnd: '10px' }}
         />
       )}
       {!isOnlySDOs && (
         <Button
           onClick={handleOpenCreateObservable}
           variant="contained"
-          style={{ marginRight: '10px' }}
+          style={{ marginInlineEnd: '10px' }}
         >
           {t_i18n('Create an observable')}
         </Button>
@@ -932,7 +932,7 @@ const StixCoreRelationshipCreationFromEntity: FunctionComponent<StixCoreRelation
           color="primary"
           aria-label="Label"
           onClick={() => setOpen(true)}
-          style={{ float: 'left', margin: '-15px 0 0 -2px' }}
+          style={{ float: 'inline-start', margin: '-15px 0 0 -2px' }}
           size="large"
         >
           <Add fontSize="small" />

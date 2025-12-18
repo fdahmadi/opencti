@@ -103,15 +103,15 @@ const RootGroupComponent: FunctionComponent<RootGroupComponentProps> = ({ queryR
             <Typography
               variant="h1"
               gutterBottom={true}
-              style={{ float: 'left' }}
+              style={{ float: 'inline-start' }}
             >
               {group.name}
             </Typography>
             <div className="clearfix" />
           </div>
-          <div style={{ display: 'flex', alignItems: 'center', paddingRight: 200 }}>
+          <div style={{ display: 'flex', alignItems: 'center', paddingInlineEnd: 200 }}>
             <div style={{ display: 'flex' }}>
-              <div style={{ marginRight: theme.spacing(0.5) }}>
+              <div style={{ marginInlineEnd: theme.spacing(0.5) }}>
                 {canDelete && (
                   <PopoverMenu>
                     {({ closeMenu }) => (

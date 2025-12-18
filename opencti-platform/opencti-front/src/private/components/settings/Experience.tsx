@@ -178,11 +178,11 @@ const ExperienceComponent: FunctionComponent<ExperienceComponentProps> = ({ quer
       <Grid container={true} spacing={3} style={{ marginBottom: 23 }}>
         {isEnterpriseEditionActivated ? (
           <Grid item xs={6}>
-            <Typography variant="h4" gutterBottom={true} style={{ float: 'left' }}>
+            <Typography variant="h4" gutterBottom={true} style={{ float: 'inline-start' }}>
               {t_i18n('Enterprise Edition')}
             </Typography>
             {!isEnterpriseEditionByConfig && isGrantedToParameters && (
-              <div style={{ float: 'right', marginTop: theme.spacing(-2.6), position: 'relative' }}>
+              <div style={{ float: 'inline-end', marginTop: theme.spacing(-2.6), position: 'relative' }}>
                 <DangerZoneBlock
                   type="ce_ee_toggle"
                   sx={{
@@ -251,8 +251,8 @@ const ExperienceComponent: FunctionComponent<ExperienceComponentProps> = ({ quer
             )}
             {!isEnterpriseEditionByConfig && isGrantedToParameters && (
               <div style={{
-                float: 'right',
-                marginRight: theme.spacing(1),
+                float: 'inline-end',
+                marginInlineEnd: theme.spacing(1),
                 marginTop: theme.spacing(-2),
                 position: 'relative',
               }}
@@ -334,7 +334,7 @@ const ExperienceComponent: FunctionComponent<ExperienceComponentProps> = ({ quer
                               variant="outlined"
                               size="small"
                               style={{
-                                marginLeft: theme.spacing(1),
+                                marginInlineStart: theme.spacing(1),
                               }}
                             />
                           </Tooltip>
@@ -346,7 +346,7 @@ const ExperienceComponent: FunctionComponent<ExperienceComponentProps> = ({ quer
                         size="small"
                         variant="outlined"
                         onClick={() => setOpenValidateTermsOfUse(true)}
-                        style={{ marginRight: 7, lineHeight: '12px', width: 250 }}
+                        style={{ marginInlineEnd: 7, lineHeight: '12px', width: 250 }}
                       >
                         {t_i18n('Validate the Filigran AI Terms')}
                       </Button>
@@ -377,10 +377,10 @@ const ExperienceComponent: FunctionComponent<ExperienceComponentProps> = ({ quer
           </Grid>
         ) : (
           <Grid item xs={6}>
-            <Typography variant="h4" gutterBottom={true} style={{ float: 'left' }}>
+            <Typography variant="h4" gutterBottom={true} style={{ float: 'inline-start' }}>
               {t_i18n('Enterprise Edition')}
             </Typography>
-            <div style={{ float: 'right', marginTop: theme.spacing(-2.1), position: 'relative' }}>
+            <div style={{ float: 'inline-end', marginTop: theme.spacing(-2.1), position: 'relative' }}>
               {!isEnterpriseEditionActivated && isGrantedToParameters && (
                 <EnterpriseEditionButton inLine={true} />
               )}
@@ -396,7 +396,7 @@ const ExperienceComponent: FunctionComponent<ExperienceComponentProps> = ({ quer
                   {t_i18n('Enable powerful features with OpenCTI Enterprise Edition')}
                 </Typography>
                 <p>{t_i18n('OpenCTI Enterprise Edition (EE) provides highly demanding organizations with a version that includes additional and powerful features, which require specific investments in research and development.')}</p>
-                <List sx={{ listStyleType: 'disc', marginLeft: 4 }}>
+                <List sx={{ listStyleType: 'disc', marginInlineStart: 4 }}>
                   <li>{t_i18n('Agentic AI capabilities')}</li>
                   <li>{t_i18n('Playbooks and automation')}</li>
                   <li>{t_i18n('Full text indexing')}</li>

@@ -289,14 +289,14 @@ export const CityCreationForm: FunctionComponent<CityFormProps> = ({
             />
             <div style={{
               marginTop: '20px',
-              textAlign: 'right',
+              textAlign: 'end',
             }}
             >
               <Button
                 variant="contained"
                 onClick={handleReset}
                 disabled={isSubmitting}
-                sx={{ marginLeft: 2 }}
+                sx={{ marginInlineStart: 2 }}
               >
                 {t_i18n('Cancel')}
               </Button>
@@ -305,7 +305,7 @@ export const CityCreationForm: FunctionComponent<CityFormProps> = ({
                 color="secondary"
                 onClick={submitForm}
                 disabled={isSubmitting}
-                sx={{ marginLeft: 2 }}
+                sx={{ marginInlineStart: 2 }}
               >
                 {t_i18n('Create')}
               </Button>

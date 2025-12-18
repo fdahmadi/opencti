@@ -290,14 +290,14 @@ export const IndividualCreationForm: FunctionComponent<IndividualFormProps> = ({
             />
             <div style={{
               marginTop: '20px',
-              textAlign: 'right',
+              textAlign: 'end',
             }}
             >
               <Button
                 variant="contained"
                 onClick={handleReset}
                 disabled={isSubmitting}
-                sx={{ marginLeft: 2 }}
+                sx={{ marginInlineStart: 2 }}
               >
                 {t_i18n('Cancel')}
               </Button>
@@ -306,7 +306,7 @@ export const IndividualCreationForm: FunctionComponent<IndividualFormProps> = ({
                 color="secondary"
                 onClick={submitForm}
                 disabled={isSubmitting}
-                sx={{ marginLeft: 2 }}
+                sx={{ marginInlineStart: 2 }}
               >
                 {t_i18n('Create')}
               </Button>

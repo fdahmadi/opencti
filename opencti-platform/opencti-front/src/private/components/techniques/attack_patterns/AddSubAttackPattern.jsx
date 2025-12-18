@@ -23,15 +23,15 @@ const styles = (theme) => ({
     padding: 0,
   },
   createButton: {
-    float: 'left',
+    float: 'inline-start',
     marginTop: -15,
   },
   title: {
-    float: 'left',
+    float: 'inline-start',
   },
   search: {
-    marginLeft: 'auto',
-    marginRight: ' 20px',
+    marginInlineStart: 'auto',
+    marginInlineEnd: ' 20px',
   },
   header: {
     backgroundColor: theme.palette.background.nav,
@@ -98,8 +98,8 @@ class AddSubAttackPattern extends Component {
           header={(
             <div
               style={{
-                marginLeft: 'auto',
-                marginRight: '20px',
+                marginInlineStart: 'auto',
+                marginInlineEnd: '20px',
                 display: 'flex',
                 flexDirection: 'column',
                 alignItems: 'flex-end',

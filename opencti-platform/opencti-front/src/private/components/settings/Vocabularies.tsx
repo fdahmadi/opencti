@@ -152,7 +152,7 @@ const Vocabularies = () => {
   } as UsePreloadedPaginationFragment<VocabulariesLinesPaginationQuery>;
 
   return (
-    <div style={{ marginRight: 200 }}>
+    <div style={{ marginInlineEnd: 200 }}>
       <LabelsVocabulariesMenu />
       <Breadcrumbs elements={[
         { label: t_i18n('Settings') },

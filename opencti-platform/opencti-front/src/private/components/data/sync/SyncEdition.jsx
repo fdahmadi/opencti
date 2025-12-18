@@ -30,10 +30,10 @@ import { extractToken } from '../../../../utils/ingestionAuthentificationUtils';
 const useStyles = makeStyles((theme) => ({
   buttons: {
     marginTop: 20,
-    textAlign: 'right',
+    textAlign: 'end',
   },
   button: {
-    marginLeft: theme.spacing(2),
+    marginInlineStart: theme.spacing(2),
   },
   alert: {
     width: '100%',
@@ -178,11 +178,11 @@ const SyncEditionContainer = ({ synchronizer }) => {
               &nbsp;&nbsp;{t_i18n('Remote OpenCTI configuration')}{' '}
               {isStreamAccessible ? (
                 <CheckCircleOutlined
-                  style={{ fontSize: 22, color: '#4caf50', float: 'left' }}
+                  style={{ fontSize: 22, color: '#4caf50', float: 'inline-start' }}
                 />
               ) : (
                 <WarningOutlined
-                  style={{ fontSize: 22, color: '#f44336', float: 'left' }}
+                  style={{ fontSize: 22, color: '#f44336', float: 'inline-start' }}
                 />
               )}
             </AlertTitle>
@@ -287,7 +287,7 @@ const SyncEditionContainer = ({ synchronizer }) => {
               <Field
                 component={SwitchField}
                 type="checkbox"
-                containerstyle={{ marginLeft: 2 }}
+                containerstyle={{ marginInlineStart: 2 }}
                 name="synchronized"
                 label={t_i18n('Use perfect synchronization')}
                 onChange={handleSubmitField}

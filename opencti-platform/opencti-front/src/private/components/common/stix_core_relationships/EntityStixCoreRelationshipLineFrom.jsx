@@ -26,7 +26,7 @@ import SecurityCoverageInformation from '../../analyses/security_coverages/Secur
 
 const styles = (theme) => ({
   item: {
-    paddingLeft: 10,
+    paddingInlineStart: 10,
     height: 50,
   },
   itemIcon: {
@@ -35,11 +35,11 @@ const styles = (theme) => ({
   bodyItem: {
     height: 20,
     fontSize: 13,
-    float: 'left',
+    float: 'inline-start',
     whiteSpace: 'nowrap',
     overflow: 'hidden',
     textOverflow: 'ellipsis',
-    paddingRight: 10,
+    paddingInlineEnd: 10,
   },
   goIcon: {
     position: 'absolute',
@@ -84,7 +84,7 @@ class EntityStixCoreRelationshipLineFromComponent extends Component {
           <Tooltip
             title={t('Inferred knowledge based on the rule ') + R.head(node.x_opencti_inferences).rule.name}
           >
-            <AutoFix fontSize="small" style={{ marginLeft: -30 }} />
+            <AutoFix fontSize="small" style={{ marginInlineStart: -30 }} />
           </Tooltip>
         ) : (
           <StixCoreRelationshipPopover

@@ -40,7 +40,7 @@ const useStyles = makeStyles<Theme>(() => ({
   },
   external: {
     marginTop: -2,
-    paddingLeft: 10,
+    paddingInlineStart: 10,
   },
 }));
 
@@ -169,7 +169,7 @@ const EntitiesDetailsRightsBar = () => {
           height: '100%',
           maxHeight: '100%',
           overflowY: 'auto',
-          paddingRight: 20,
+          paddingInlineEnd: 20,
         }}
       >
         {detailsPreviewSelected.entity_type === 'basic-relationship' && (

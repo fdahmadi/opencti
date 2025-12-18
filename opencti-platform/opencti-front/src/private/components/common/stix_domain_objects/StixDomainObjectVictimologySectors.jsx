@@ -40,13 +40,13 @@ const styles = (theme) => ({
     color: theme.palette.primary.main,
   },
   nested: {
-    paddingLeft: theme.spacing(4),
+    paddingInlineStart: theme.spacing(4),
   },
   subnested: {
-    paddingLeft: theme.spacing(8),
+    paddingInlineStart: theme.spacing(8),
   },
   export: {
-    float: 'right',
+    float: 'inline-end',
     marginTop: -10,
   },
   parameters: {
@@ -302,7 +302,7 @@ class StixDomainObjectVictimologySectorsComponent extends Component {
     return (
       <div>
         <div className={classes.parameters}>
-          <div style={{ float: 'left', marginRight: 20 }}>
+          <div style={{ float: 'inline-start', marginInlineEnd: 20 }}>
             <SearchInput
               variant="small"
               onSubmit={this.handleSearch.bind(this)}
@@ -310,7 +310,7 @@ class StixDomainObjectVictimologySectorsComponent extends Component {
             />
           </div>
           <div className={classes.views}>
-            <div style={{ float: 'right', marginTop: -10 }}>
+            <div style={{ float: 'inline-end', marginTop: -10 }}>
               <ToggleButtonGroup
                 size="small"
                 color="secondary"
@@ -435,7 +435,7 @@ class StixDomainObjectVictimologySectorsComponent extends Component {
                             >
                               <AutoFix
                                 fontSize="small"
-                                style={{ marginLeft: -30 }}
+                                style={{ marginInlineStart: -30 }}
                               />
                             </Tooltip>
                           ) : (
@@ -558,7 +558,7 @@ class StixDomainObjectVictimologySectorsComponent extends Component {
                                         >
                                           <AutoFix
                                             fontSize="small"
-                                            style={{ marginLeft: -30 }}
+                                            style={{ marginInlineStart: -30 }}
                                           />
                                         </Tooltip>
                                       ) : (

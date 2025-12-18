@@ -16,7 +16,7 @@ import Loader, { LoaderVariant } from '../../../../components/Loader';
 // Do not use it for new code.
 const useStyles = makeStyles(() => ({
   createButton: {
-    float: 'left',
+    float: 'inline-start',
     marginTop: -15,
   },
 }));
@@ -63,8 +63,8 @@ const AddDataSources: FunctionComponent<{ dataComponentId: string }> = ({
         title={t_i18n('Add data sources')}
         header={(
           <div style={{
-            marginLeft: 'auto',
-            marginRight: '20px',
+            marginInlineStart: 'auto',
+            marginInlineEnd: '20px',
             display: 'flex',
             flexDirection: 'column',
             alignItems: 'flex-end',

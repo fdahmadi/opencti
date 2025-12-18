@@ -55,7 +55,7 @@ const TopBanner = ({ bannerText, bannerColor = 'gradient_blue', buttonText, onBu
           variant="contained"
           onClick={onButtonClick}
           sx={{
-            marginLeft: 1,
+            marginInlineStart: 1,
             backgroundColor: '#ffffff',
             color: '#000000',
             padding: '1px 6px',
@@ -63,7 +63,7 @@ const TopBanner = ({ bannerText, bannerColor = 'gradient_blue', buttonText, onBu
             textTransform: 'none',
             lineHeight: 1.2,
             '& .MuiButton-endIcon': {
-              marginLeft: '2px',
+              marginInlineStart: '2px',
             },
           }}
           endIcon={<ArrowForwardIcon />}

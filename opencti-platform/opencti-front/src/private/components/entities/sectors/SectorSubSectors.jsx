@@ -43,7 +43,7 @@ const SectorSubSectorsComponent = ({ sector }) => {
 
   return (
     <div style={{ height: '100%' }}>
-      <Typography variant="h3" gutterBottom={true} style={{ float: 'left' }}>
+      <Typography variant="h3" gutterBottom={true} style={{ float: 'inline-start' }}>
         {t_i18n('Subsectors')}
       </Typography>
       <Security needs={[KNOWLEDGE_KNUPDATE]}>
@@ -72,7 +72,7 @@ const SectorSubSectorsComponent = ({ sector }) => {
                   <LinkOff />
                 </IconButton>
               </Security>
-            ) : <AutoFix fontSize="small" style={{ marginRight: 13 }} />}
+            ) : <AutoFix fontSize="small" style={{ marginInlineEnd: 13 }} />}
           >
             <ListItemButton
               component={Link}

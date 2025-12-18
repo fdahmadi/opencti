@@ -71,7 +71,7 @@ const ImportFilesFreeText = ({ onSubmit, onClose, initialContent }: ImportFilesF
                 htmlInput: { style: { padding: 8 } },
               }}
             />
-            <Box sx={{ display: 'flex', marginLeft: 'auto' }}>
+            <Box sx={{ display: 'flex', marginInlineStart: 'auto' }}>
               <Button
                 disabled={isSubmitting}
                 onClick={() => {

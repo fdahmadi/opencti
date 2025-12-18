@@ -127,12 +127,12 @@ const DraftCreationForm: React.FC<DraftFormProps> = ({ updater, onCompleted, onR
               applyAccesses
             />
           </div>
-          <div style={{ marginTop: 20, textAlign: 'right' }}>
+          <div style={{ marginTop: 20, textAlign: 'end' }}>
             <Button
               variant="contained"
               onClick={handleReset}
               disabled={isSubmitting}
-              style={{ marginLeft: 10 }}
+              style={{ marginInlineStart: 10 }}
             >
               {t_i18n('Cancel')}
             </Button>
@@ -141,7 +141,7 @@ const DraftCreationForm: React.FC<DraftFormProps> = ({ updater, onCompleted, onR
               color="secondary"
               onClick={submitForm}
               disabled={isSubmitting}
-              style={{ marginLeft: 10 }}
+              style={{ marginInlineStart: 10 }}
             >
               {t_i18n('Create')}
             </Button>

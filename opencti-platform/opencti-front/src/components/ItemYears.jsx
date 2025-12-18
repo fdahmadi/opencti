@@ -8,13 +8,13 @@ const styles = () => ({
     fontSize: 12,
     lineHeight: '12px',
     height: 25,
-    marginRight: 7,
+    marginInlineEnd: 7,
   },
   chipInList: {
     fontSize: 12,
     lineHeight: '12px',
     height: 20,
-    marginRight: 15,
+    marginInlineEnd: 15,
   },
 });
 

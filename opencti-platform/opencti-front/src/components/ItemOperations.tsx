@@ -98,7 +98,7 @@ const ItemOperations: FunctionComponent<ItemOperationsProps> = ({ draftOperation
         ...{
           ...chipInListBasicStyle,
           lineHeight: '12px',
-          marginRight: 7,
+          marginInlineEnd: 7,
           width: 120,
           textTransform: 'uppercase',
         },

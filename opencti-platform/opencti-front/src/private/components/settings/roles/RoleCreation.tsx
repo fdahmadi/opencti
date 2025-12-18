@@ -130,14 +130,14 @@ const RoleCreation = ({ paginationOptions }: {
               />
               <div style={{
                 marginTop: 20,
-                textAlign: 'right',
+                textAlign: 'end',
               }}
               >
                 <Button
                   variant="contained"
                   onClick={handleReset}
                   disabled={isSubmitting}
-                  style={{ marginLeft: theme.spacing(2) }}
+                  style={{ marginInlineStart: theme.spacing(2) }}
                 >
                   {t_i18n('Cancel')}
                 </Button>
@@ -146,7 +146,7 @@ const RoleCreation = ({ paginationOptions }: {
                   color="secondary"
                   onClick={submitForm}
                   disabled={isSubmitting || !isValid}
-                  style={{ marginLeft: theme.spacing(2) }}
+                  style={{ marginInlineStart: theme.spacing(2) }}
                 >
                   {t_i18n('Create')}
                 </Button>

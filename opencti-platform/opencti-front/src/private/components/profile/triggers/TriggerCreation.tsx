@@ -43,7 +43,7 @@ const TriggerCreation: FunctionComponent<TriggerCreationProps> = ({
     <>
       <Button
         variant="contained"
-        sx={{ marginRight: theme.spacing(1) }}
+        sx={{ marginInlineEnd: theme.spacing(1) }}
         onClick={handleOpenCreateDigest}
       >
         {t_i18n('', {

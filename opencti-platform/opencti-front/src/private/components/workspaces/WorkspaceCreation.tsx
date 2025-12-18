@@ -127,7 +127,7 @@ const WorkspaceCreation = ({ paginationOptions, type }: WorkspaceCreationProps) 
           value="import"
           size="small"
           onClick={() => inputRef.current?.click()}
-          sx={{ marginLeft: theme.spacing(1) }}
+          sx={{ marginInlineStart: theme.spacing(1) }}
           data-testid="ImportDashboard"
           title={t_i18n('Import dashboard')}
         >
@@ -136,7 +136,7 @@ const WorkspaceCreation = ({ paginationOptions, type }: WorkspaceCreationProps) 
         {isXTMHubAccessible && isNotEmptyField(importFromHubUrl) && (
           <GradientButton
             size="small"
-            sx={{ marginLeft: theme.spacing(1) }}
+            sx={{ marginInlineStart: theme.spacing(1) }}
             href={importFromHubUrl}
             target="_blank"
             title={t_i18n('Import from Hub')}
@@ -186,12 +186,12 @@ const WorkspaceCreation = ({ paginationOptions, type }: WorkspaceCreationProps) 
                   rows="4"
                   style={{ marginTop: 20 }}
                 />
-                <div style={{ marginTop: 20, textAlign: 'right' }}>
+                <div style={{ marginTop: 20, textAlign: 'end' }}>
                   <Button
                     variant="contained"
                     onClick={handleReset}
                     disabled={isSubmitting}
-                    style={{ marginLeft: theme.spacing(2) }}
+                    style={{ marginInlineStart: theme.spacing(2) }}
                   >
                     {t_i18n('Cancel')}
                   </Button>
@@ -200,7 +200,7 @@ const WorkspaceCreation = ({ paginationOptions, type }: WorkspaceCreationProps) 
                     color="secondary"
                     onClick={submitForm}
                     disabled={isSubmitting}
-                    style={{ marginLeft: theme.spacing(2) }}
+                    style={{ marginInlineStart: theme.spacing(2) }}
                   >
                     {t_i18n('Create')}
                   </Button>

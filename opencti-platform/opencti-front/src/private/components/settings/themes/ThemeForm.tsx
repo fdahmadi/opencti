@@ -186,12 +186,12 @@ const ThemeForm: FunctionComponent<ThemeFormProps> = ({
 
       {
         withButtons && (
-          <div style={{ marginTop: 20, textAlign: 'right' }}>
+          <div style={{ marginTop: 20, textAlign: 'end' }}>
             <Button
               variant="contained"
               onClick={onCancel}
               disabled={isSubmitting}
-              style={{ marginLeft: theme.spacing(2) }}
+              style={{ marginInlineStart: theme.spacing(2) }}
             >
               {t_i18n('Cancel')}
             </Button>
@@ -200,7 +200,7 @@ const ThemeForm: FunctionComponent<ThemeFormProps> = ({
               color="secondary"
               onClick={onSubmit}
               disabled={isSubmitting}
-              style={{ marginLeft: theme.spacing(2) }}
+              style={{ marginInlineStart: theme.spacing(2) }}
             >
               {t_i18n(submitLabel)}
             </Button>

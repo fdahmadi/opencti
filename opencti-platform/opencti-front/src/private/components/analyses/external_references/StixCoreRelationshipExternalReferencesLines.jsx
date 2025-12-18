@@ -73,8 +73,8 @@ const styles = (theme) => ({
       theme.palette.mode === 'dark'
         ? 'rgba(255, 255, 255, .1)'
         : 'rgba(0, 0, 0, .1)',
-    borderTopLeftRadius: 0,
-    borderTopRightRadius: 0,
+    borderStartStartRadius: 0,
+    borderStartEndRadius: 0,
     '&:hover': {
       backgroundColor:
         theme.palette.mode === 'dark'
@@ -180,7 +180,7 @@ class StixCoreRelationshipExternalReferencesLinesContainer extends Component {
     const expandable = externalReferencesEdges.length > 7;
     return (
       <div style={{ height: '100%' }}>
-        <Typography variant="h4" gutterBottom={true} style={{ float: 'left' }}>
+        <Typography variant="h4" gutterBottom={true} style={{ float: 'inline-start' }}>
           {t('External references')}
         </Typography>
         <Security

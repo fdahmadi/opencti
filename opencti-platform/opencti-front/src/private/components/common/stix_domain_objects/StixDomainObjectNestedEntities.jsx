@@ -18,24 +18,24 @@ const styles = (theme) => ({
     borderRadius: 4,
   },
   item: {
-    paddingLeft: 10,
+    paddingInlineStart: 10,
     height: 50,
   },
   itemIcon: {
     color: theme.palette.primary.main,
   },
   itemHead: {
-    paddingLeft: 10,
+    paddingInlineStart: 10,
     textTransform: 'uppercase',
   },
   bodyItem: {
     height: 20,
     fontSize: 13,
-    float: 'left',
+    float: 'inline-start',
     whiteSpace: 'nowrap',
     overflow: 'hidden',
     textOverflow: 'ellipsis',
-    paddingRight: 10,
+    paddingInlineEnd: 10,
   },
   goIcon: {
     position: 'absolute',
@@ -74,7 +74,7 @@ class StixDomainObjectNestedEntities extends Component {
     };
     return (
       <div style={{ marginTop: 20 }}>
-        <Typography variant="h4" gutterBottom={true} style={{ float: 'left' }}>
+        <Typography variant="h4" gutterBottom={true} style={{ float: 'inline-start' }}>
           {t('Nested objects')}
         </Typography>
         <Security

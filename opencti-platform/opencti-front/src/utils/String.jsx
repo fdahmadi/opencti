@@ -117,7 +117,7 @@ export const renderObservableValue = (observable) => {
         if (flag) {
           return (
             <div>
-              <div style={{ float: 'left', paddingTop: 2 }}>
+              <div style={{ float: 'inline-start', paddingTop: 2 }}>
                 <Tooltip title={country.name}>
                   <img
                     style={{ width: 20 }}
@@ -126,7 +126,7 @@ export const renderObservableValue = (observable) => {
                   />
                 </Tooltip>
               </div>
-              <div style={{ float: 'left', marginLeft: 10 }}>
+              <div style={{ float: 'inline-start', marginInlineStart: 10 }}>
                 {observable.observable_value}
               </div>
             </div>

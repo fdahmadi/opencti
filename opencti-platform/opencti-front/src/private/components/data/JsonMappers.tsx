@@ -30,7 +30,7 @@ const LOCAL_STORAGE_KEY_JSON_MAPPERS = 'jsonMappers';
 // Do not use it for new code.
 const useStyles = makeStyles<Theme>(() => ({
   container: {
-    paddingRight: '200px',
+    paddingInlineEnd: '200px',
   },
 }));
 
@@ -145,7 +145,7 @@ const JsonMappers = () => {
                     <Button
                       variant="contained"
                       disableElevation
-                      sx={{ marginLeft: 1 }}
+                      sx={{ marginInlineStart: 1 }}
                       onClick={() => setOpen(true)}
                     >
                       {t_i18n('Create a JSON mapper')}

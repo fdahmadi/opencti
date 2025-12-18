@@ -20,8 +20,8 @@ const useStyles = makeStyles(() => ({
   label: {
     fontSize: 12,
     height: 20,
-    float: 'left',
-    marginRight: 7,
+    float: 'inline-start',
+    marginInlineEnd: 7,
   },
 }));
 

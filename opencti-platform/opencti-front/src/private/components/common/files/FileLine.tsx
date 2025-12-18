@@ -53,12 +53,12 @@ const useStyles = makeStyles<Theme>((theme) => ({
     height: 50,
   },
   itemNested: {
-    paddingLeft: theme.spacing(4),
+    paddingInlineStart: theme.spacing(4),
     height: 50,
   },
   itemText: {
     whiteSpace: 'nowrap',
-    marginRight: 10,
+    marginInlineEnd: 10,
   },
   fileName: {
     overflow: 'hidden',
@@ -414,7 +414,7 @@ const FileLineComponent: FunctionComponent<FileLineComponentProps> = ({
               <Tooltip title={toolTip !== 'null' ? toolTip : ''}>
                 <WarningOutlined
                   color={nested ? 'primary' : 'inherit'}
-                  style={{ fontSize: 15, color: '#f44336', marginLeft: 4 }}
+                  style={{ fontSize: 15, color: '#f44336', marginInlineStart: 4 }}
                 />
               </Tooltip>
             )}

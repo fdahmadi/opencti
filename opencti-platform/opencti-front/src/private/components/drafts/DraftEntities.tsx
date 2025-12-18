@@ -236,7 +236,7 @@ const DraftEntities: FunctionComponent<DraftEntitiesProps> = ({
           paginationOptions={queryPaginationOptions}
           speeddial={false}
           open={openCreateObservable}
-          controlledDialStyles={{ marginLeft: 1 }}
+          controlledDialStyles={{ marginInlineStart: 1 }}
           handleClose={handleCloseCreateObservable}
           type={undefined}
           defaultCreatedBy={undefined}
@@ -250,7 +250,7 @@ const DraftEntities: FunctionComponent<DraftEntitiesProps> = ({
           paginationKey="Pagination_draftWorkspaceEntities"
           paginationOptions={queryPaginationOptions}
           speeddial={false}
-          controlledDialStyles={{ marginLeft: 1 }}
+          controlledDialStyles={{ marginInlineStart: 1 }}
           open={openCreateEntity}
           handleClose={handleCloseCreateEntity}
           onCompleted={() => setOpenCreateEntity(false)}

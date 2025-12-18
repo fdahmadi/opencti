@@ -151,12 +151,12 @@ const DecayExclusionRuleCreationForm = ({ updater, onReset, onCompleted }: Decay
               label={t_i18n('Active')}
               containerstyle={fieldSpacingContainerStyle}
             />
-            <div style={{ marginTop: 20, textAlign: 'right' }}>
+            <div style={{ marginTop: 20, textAlign: 'end' }}>
               <Button
                 variant="contained"
                 onClick={handleReset}
                 disabled={isSubmitting}
-                style={{ marginLeft: 16 }}
+                style={{ marginInlineStart: 16 }}
               >
                 {t_i18n('Cancel')}
               </Button>
@@ -165,7 +165,7 @@ const DecayExclusionRuleCreationForm = ({ updater, onReset, onCompleted }: Decay
                 color="secondary"
                 onClick={submitForm}
                 disabled={isSubmitting}
-                style={{ marginLeft: 16 }}
+                style={{ marginInlineStart: 16 }}
               >
                 {t_i18n('Create')}
               </Button>

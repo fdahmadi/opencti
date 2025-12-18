@@ -62,14 +62,14 @@ interface DeleteOperationLineComponentProps {
 const cellSx = {
   height: 20,
   fontSize: 13,
-  float: 'left',
+  float: 'inline-start',
   whiteSpace: 'nowrap',
   overflow: 'hidden',
-  paddingRight: '10px',
+  paddingInlineEnd: '10px',
 };
 
 const listItemSx = {
-  paddingLeft: '10px',
+  paddingInlineStart: '10px',
   height: 50,
 };
 

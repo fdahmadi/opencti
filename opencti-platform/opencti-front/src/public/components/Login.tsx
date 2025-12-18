@@ -87,7 +87,7 @@ const useStyles = makeStyles<Theme>((theme) => ({
     },
   },
   iconSmall: {
-    marginRight: theme.spacing(1),
+    marginInlineEnd: theme.spacing(1),
     fontSize: 20,
   },
   paper: {
@@ -111,7 +111,7 @@ const useStyles = makeStyles<Theme>((theme) => ({
   },
   filigranLogo: {
     width: 20,
-    marginRight: 10,
+    marginInlineEnd: 10,
   },
   byFiligranText: {
     margin: 'auto 0',
@@ -260,7 +260,7 @@ const Login: FunctionComponent<LoginProps> = ({ type, settings }) => {
           }}
         >
           <Alert severity="warning">
-            <AlertTitle style={{ textAlign: 'left' }}>Warning</AlertTitle>
+            <AlertTitle style={{ textAlign: 'start' }}>Warning</AlertTitle>
             You were automatically logged out due to session expiration.
           </Alert>
         </Paper>
@@ -275,7 +275,7 @@ const Login: FunctionComponent<LoginProps> = ({ type, settings }) => {
           }}
         >
           <Alert severity="error">
-            <AlertTitle style={{ textAlign: 'left' }}>Error</AlertTitle>
+            <AlertTitle style={{ textAlign: 'start' }}>Error</AlertTitle>
             {flashError}
           </Alert>
         </Paper>

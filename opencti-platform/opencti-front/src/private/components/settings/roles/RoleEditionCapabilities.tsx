@@ -159,7 +159,7 @@ const RoleEditionCapabilitiesComponent: FunctionComponent<RoleEditionCapabilitie
           <ListItem
             key="sensitive"
             divider={true}
-            style={{ paddingLeft: 0 }}
+            style={{ paddingInlineStart: 0 }}
             secondaryAction={(
               <Checkbox
                 onChange={(event) => handleSensitiveToggle(event)}

@@ -48,7 +48,7 @@ interface OrganizationForm {
 const useStyles = makeStyles<Theme>(() => ({
   organization: {
     margin: '0 7px 0 0',
-    float: 'left',
+    float: 'inline-start',
     fontSize: 12,
     lineHeight: '12px',
     height: 28,
@@ -184,7 +184,7 @@ const StixCoreObjectSharing: FunctionComponent<ContainerHeaderSharedProps> = ({
                 value="shared"
                 onClick={isEnterpriseEdition && !disabledInDraft ? handleOpenSharing : () => {}}
                 size="small"
-                style={{ marginRight: 3 }}
+                style={{ marginInlineEnd: 3 }}
                 disabled={disabled}
               >
                 <BankPlus
@@ -237,7 +237,7 @@ const StixCoreObjectSharing: FunctionComponent<ContainerHeaderSharedProps> = ({
     }
     return (
       <>
-        <Typography variant="h3" gutterBottom={true} style={{ float: 'left' }}>
+        <Typography variant="h3" gutterBottom={true} style={{ float: 'inline-start' }}>
           {t_i18n('Organizations sharing')}
         </Typography>
         {!handleClose && (
@@ -247,7 +247,7 @@ const StixCoreObjectSharing: FunctionComponent<ContainerHeaderSharedProps> = ({
                 color="primary"
                 aria-label="Label"
                 onClick={isEnterpriseEdition ? handleOpenSharing : () => {}}
-                style={{ float: 'left', margin: '-15px 0 0 -2px' }}
+                style={{ float: 'inline-start', margin: '-15px 0 0 -2px' }}
                 size="large"
                 disabled={disabled}
               >

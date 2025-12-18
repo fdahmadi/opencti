@@ -200,7 +200,7 @@ const WorkbenchCreationForm: React.FC<WorkbenchCreationProps> = ({ onCompleted, 
                 <div style={{
                   display: 'inline-block',
                   flexGrow: 1,
-                  marginLeft: 10,
+                  marginInlineStart: 10,
                 }}
                 >
                   {option.label}
@@ -220,12 +220,12 @@ const WorkbenchCreationForm: React.FC<WorkbenchCreationProps> = ({ onCompleted, 
             setFieldValue={setFieldValue}
             required={false}
           />
-          <div style={{ marginTop: 20, textAlign: 'right' }}>
+          <div style={{ marginTop: 20, textAlign: 'end' }}>
             <Button
               variant="contained"
               onClick={handleReset}
               disabled={isSubmitting}
-              style={{ marginLeft: 10 }}
+              style={{ marginInlineStart: 10 }}
             >
               {t_i18n('Cancel')}
             </Button>
@@ -234,7 +234,7 @@ const WorkbenchCreationForm: React.FC<WorkbenchCreationProps> = ({ onCompleted, 
               color="secondary"
               onClick={submitForm}
               disabled={isSubmitting}
-              style={{ marginLeft: 10 }}
+              style={{ marginInlineStart: 10 }}
             >
               {t_i18n('Create')}
             </Button>

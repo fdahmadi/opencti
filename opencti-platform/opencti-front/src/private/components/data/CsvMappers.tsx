@@ -30,7 +30,7 @@ export const LOCAL_STORAGE_KEY_CSV_MAPPERS = 'csvMappers';
 // Do not use it for new code.
 const useStyles = makeStyles<Theme>(() => ({
   container: {
-    paddingRight: '200px',
+    paddingInlineEnd: '200px',
   },
 }));
 
@@ -182,7 +182,7 @@ const CsvMappers = () => {
                     <Button
                       variant="contained"
                       disableElevation
-                      sx={{ marginLeft: 1 }}
+                      sx={{ marginInlineStart: 1 }}
                       onClick={() => setOpen(true)}
                     >
                       {t_i18n('Create a CSV mapper')}

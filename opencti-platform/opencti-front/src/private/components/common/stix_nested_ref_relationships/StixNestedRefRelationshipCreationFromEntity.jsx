@@ -56,7 +56,7 @@ const useStyles = makeStyles((theme) => ({
     zIndex: 1001,
   },
   title: {
-    float: 'left',
+    float: 'inline-start',
   },
   header: {
     backgroundColor: theme.palette.background.nav,
@@ -141,16 +141,16 @@ const useStyles = makeStyles((theme) => ({
   },
   buttonBack: {
     marginTop: 20,
-    textAlign: 'left',
-    float: 'left',
+    textAlign: 'start',
+    float: 'inline-start',
   },
   buttons: {
     marginTop: 20,
-    textAlign: 'right',
-    float: 'right',
+    textAlign: 'end',
+    float: 'inline-end',
   },
   button: {
-    marginLeft: theme.spacing(2),
+    marginInlineStart: theme.spacing(2),
   },
   speedDial: {
     position: 'fixed',
@@ -917,7 +917,7 @@ const StixNestedRefRelationshipCreationFromEntity = ({
           color="primary"
           aria-label="Label"
           onClick={handleOpen}
-          style={{ float: 'left', margin: '-15px 0 0 -2px', zIndex: 1 }}
+          style={{ float: 'inline-start', margin: '-15px 0 0 -2px', zIndex: 1 }}
           size="large"
         >
           <Add fontSize="small" />

@@ -46,10 +46,10 @@ const DashboardTimeFilters: React.FC<DashboardTimeFiltersProps> = ({
       needs={[EXPLORE_EXUPDATE, INVESTIGATION_INUPDATE]}
       hasAccess={canEdit}
     >
-      <div style={{ display: 'flex', marginLeft: 20 }}>
+      <div style={{ display: 'flex', marginInlineStart: 20 }}>
         <FormControl
           size="small"
-          style={{ width: 194, marginRight: 8 }}
+          style={{ width: 194, marginInlineEnd: 8 }}
           variant="outlined"
         >
           <InputLabel id="relative" variant="outlined">
@@ -79,7 +79,7 @@ const DashboardTimeFilters: React.FC<DashboardTimeFiltersProps> = ({
           onChange={(value: Date | null, context) => !context.validationError && handleChangeDate('startDate', value)}
           slotProps={{
             textField: {
-              style: { marginRight: 8 },
+              style: { marginInlineEnd: 8 },
               variant: 'outlined',
               size: 'small',
             },

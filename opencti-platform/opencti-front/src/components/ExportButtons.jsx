@@ -107,7 +107,7 @@ class ExportButtons extends Component {
       MESSAGING$.notifyError(t('Dashboard cannot be exported to image'));
     } finally {
       exportButtons?.setAttribute('style', 'display: block');
-      viewButtons?.setAttribute('style', 'display: block, marginLeft: theme.spacing(2)');
+      viewButtons?.setAttribute('style', 'display: block, marginInlineStart: theme.spacing(2)');
 
       commitLocalUpdate((store) => {
         const me = store.getRoot().getLinkedRecord('me');
@@ -195,14 +195,14 @@ class ExportButtons extends Component {
             <div className={classes.exportButtons} id="export-buttons">
               <Security needs={[KNOWLEDGE_KNFRONTENDEXPORT]}>
                 <Tooltip title={t('Export to image')}>
-                  <ToggleButton size="small" onClick={this.handleOpenImage.bind(this)} value="Export-to-image" style={{ marginRight: 3 }}>
+                  <ToggleButton size="small" onClick={this.handleOpenImage.bind(this)} value="Export-to-image" style={{ marginInlineEnd: 3 }}>
                     <ImageOutlined fontSize="small" color="primary" />
                   </ToggleButton>
                 </Tooltip>
               </Security>
               <Security needs={[KNOWLEDGE_KNFRONTENDEXPORT]}>
                 <Tooltip title={t('Export to PDF')}>
-                  <ToggleButton size="small" onClick={this.handleOpenPdf.bind(this)} value="Export-to-PDF" style={{ marginRight: 3 }}>
+                  <ToggleButton size="small" onClick={this.handleOpenPdf.bind(this)} value="Export-to-PDF" style={{ marginInlineEnd: 3 }}>
                     <FilePdfBox fontSize="small" color="primary" />
                   </ToggleButton>
                 </Tooltip>
@@ -213,7 +213,7 @@ class ExportButtons extends Component {
                     size="small"
                     onClick={handleExportDashboard.bind(this)}
                     value="Export-to-JSON"
-                    style={{ marginRight: 3 }}
+                    style={{ marginInlineEnd: 3 }}
                   >
                     <FileExportOutline fontSize="small" color="primary" />
                   </ToggleButton>
@@ -229,7 +229,7 @@ class ExportButtons extends Component {
                       containerId,
                       navigate,
                     )}
-                    style={{ marginRight: 3 }}
+                    style={{ marginInlineEnd: 3 }}
                   >
                     <ExploreOutlined fontSize="small" color={!isInDraft ? 'primary' : 'disabled'} />
                   </ToggleButton>
@@ -237,14 +237,14 @@ class ExportButtons extends Component {
               )}
               {type === 'investigation' && (
                 <Tooltip title={t('Download as STIX report')}>
-                  <ToggleButton size="small" onClick={handleDownloadAsStixReport.bind(this)} value="Download-as-STIX-report" style={{ marginRight: 3 }}>
+                  <ToggleButton size="small" onClick={handleDownloadAsStixReport.bind(this)} value="Download-as-STIX-report" style={{ marginInlineEnd: 3 }}>
                     <GetAppOutlined fontSize="small" color="primary" />
                   </ToggleButton>
                 </Tooltip>
               )}
               {csvData && (
                 <Tooltip title={t('Export to CSV')}>
-                  <ToggleButton size="small" onClick={() => this.csvLink.current.link.click()} value="Export-to-CSV" style={{ marginRight: 3 }}>
+                  <ToggleButton size="small" onClick={() => this.csvLink.current.link.click()} value="Export-to-CSV" style={{ marginInlineEnd: 3 }}>
                     <FileDelimitedOutline fontSize="small" color="primary" />
                   </ToggleButton>
                 </Tooltip>

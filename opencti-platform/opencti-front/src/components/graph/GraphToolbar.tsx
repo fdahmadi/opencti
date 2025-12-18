@@ -50,7 +50,7 @@ const GraphToolbar = ({
         elevation: 1,
         style: {
           zIndex: 1,
-          paddingLeft: navOpen ? 180 : 60,
+          paddingInlineStart: navOpen ? 180 : 60,
           height: showTimeRange ? 134 : 54,
           overflow: 'hidden',
           transition: 'height 0.2s ease',
@@ -92,7 +92,7 @@ const GraphToolbar = ({
         {context === 'correlation' && (
           <>
             <GraphToolbarCorrelationTools />
-            <Divider sx={{ margin: 1, marginRight: 2, height: '80%' }} orientation="vertical" />
+            <Divider sx={{ margin: 1, marginInlineEnd: 2, height: '80%' }} orientation="vertical" />
           </>
         )}
 

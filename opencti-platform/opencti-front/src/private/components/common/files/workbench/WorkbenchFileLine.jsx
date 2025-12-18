@@ -26,41 +26,41 @@ import useDeletion from '../../../../../utils/hooks/useDeletion';
 
 const styles = (theme) => ({
   itemNested: {
-    paddingLeft: theme.spacing(4),
+    paddingInlineStart: theme.spacing(4),
     height: 50,
   },
   itemText: {
     whiteSpace: 'nowrap',
     overflow: 'hidden',
     textOverflow: 'ellipsis',
-    paddingRight: 10,
+    paddingInlineEnd: 10,
   },
   chipInList: {
     fontSize: 12,
     height: 20,
-    float: 'left',
-    marginRight: 10,
+    float: 'inline-start',
+    marginInlineEnd: 10,
   },
   linesContainer: {
     marginTop: 10,
   },
   itemHead: {
-    paddingLeft: 10,
+    paddingInlineStart: 10,
     textTransform: 'uppercase',
     cursor: 'pointer',
   },
   item: {
-    paddingLeft: 10,
+    paddingInlineStart: 10,
     height: 50,
   },
   bodyItem: {
     height: 20,
     fontSize: 13,
-    float: 'left',
+    float: 'inline-start',
     whiteSpace: 'nowrap',
     overflow: 'hidden',
     textOverflow: 'ellipsis',
-    paddingRight: 10,
+    paddingInlineEnd: 10,
   },
   itemIcon: {
     color: theme.palette.primary.main,
@@ -70,10 +70,10 @@ const styles = (theme) => ({
     right: -10,
   },
   inputLabel: {
-    float: 'left',
+    float: 'inline-start',
   },
   sortIcon: {
-    float: 'left',
+    float: 'inline-start',
     margin: '-5px 0 0 15px',
   },
   icon: {

@@ -123,10 +123,10 @@ const styles = (theme) => ({
   },
   buttons: {
     marginTop: 20,
-    textAlign: 'right',
+    textAlign: 'end',
   },
   button: {
-    marginLeft: theme.spacing(2),
+    marginInlineStart: theme.spacing(2),
   },
   buttonAdd: {
     width: '100%',
@@ -169,16 +169,16 @@ const styles = (theme) => ({
   },
   stepType: {
     margin: 0,
-    paddingRight: 20,
+    paddingInlineEnd: 20,
     width: '30%',
   },
   stepField: {
     margin: 0,
-    paddingRight: 20,
+    paddingInlineEnd: 20,
     width: '30%',
   },
   stepValues: {
-    paddingRight: 20,
+    paddingInlineEnd: 20,
     margin: 0,
   },
   stepCloseButton: {
@@ -193,7 +193,7 @@ const styles = (theme) => ({
   text: {
     display: 'inline-block',
     flexGrow: 1,
-    marginLeft: 10,
+    marginInlineStart: 10,
   },
   autoCompleteIndicator: {
     display: 'none',
@@ -2264,7 +2264,7 @@ class DataTableToolBar extends Component {
           // endregion
           return (
             <>
-              <Toolbar style={{ minHeight: 40, display: 'flex', justifyContent: 'space-between', height: '100%', paddingRight: 12, paddingLeft: 8 }} data-testid="opencti-toolbar">
+              <Toolbar style={{ minHeight: 40, display: 'flex', justifyContent: 'space-between', height: '100%', paddingInlineEnd: 12, paddingInlineStart: 8 }} data-testid="opencti-toolbar">
                 <div style={{ display: 'flex', alignItems: 'center', gap: 4 }}>
                   <Typography
                     className={classes.title}
@@ -2628,10 +2628,10 @@ class DataTableToolBar extends Component {
                 data-testid="background-task-popup"
               >
                 <DialogTitle>
-                  <div style={{ float: 'left' }}>
+                  <div style={{ float: 'inline-start' }}>
                     {t('Launch a background task')}
                   </div>
-                  <div style={{ float: 'right' }}>
+                  <div style={{ float: 'inline-end' }}>
                     <span
                       style={{
                         padding: '2px 5px 2px 5px',
@@ -2667,7 +2667,7 @@ class DataTableToolBar extends Component {
                             <span
                               style={{
                                 padding: '2px 5px 2px 5px',
-                                marginRight: 5,
+                                marginInlineEnd: 5,
                                 color:
                                   theme.palette.mode === 'dark'
                                     ? '#000000'
@@ -2731,7 +2731,7 @@ class DataTableToolBar extends Component {
                                 <span
                                   style={{
                                     padding: '2px 5px 2px 5px',
-                                    marginRight: 5,
+                                    marginInlineEnd: 5,
                                     color:
                                       theme.palette.mode === 'dark'
                                         ? '#000000'
@@ -2946,10 +2946,10 @@ class DataTableToolBar extends Component {
                             60,
                           )}
                         />
-                        <div style={{ marginRight: 50 }}>
+                        <div style={{ marginInlineEnd: 50 }}>
                           {element.createdBy?.name ?? '-'}
                         </div>
-                        <div style={{ marginRight: 50 }}>
+                        <div style={{ marginInlineEnd: 50 }}>
                           <ItemMarkings
                             variant="inList"
                             markingDefinitions={element.objectMarking ?? []}

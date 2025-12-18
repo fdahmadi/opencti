@@ -127,9 +127,9 @@ const IngestionCsvEditionUserHandling: FunctionComponent<IngestionCsvEditionUser
       >
         {({ submitForm, resetForm }) => (
 
-          <Box sx={{ paddingRight: '50px' }}>
+          <Box sx={{ paddingInlineEnd: '50px' }}>
             <Dialog
-              sx={{ paddingRight: '150px' }}
+              sx={{ paddingInlineEnd: '150px' }}
               open={openDialog}
               fullWidth={true}
               keepMounted={true}

@@ -104,12 +104,12 @@ const DisseminationListForm: FunctionComponent<DisseminationListFormProps> = ({
             }}
           />
           {!isEdition && (
-            <div style={{ marginTop: theme.spacing(2), textAlign: 'right' }}>
+            <div style={{ marginTop: theme.spacing(2), textAlign: 'end' }}>
               <Button
                 variant="contained"
                 onClick={handleReset}
                 disabled={isSubmitting}
-                style={{ marginLeft: theme.spacing(2) }}
+                style={{ marginInlineStart: theme.spacing(2) }}
               >
                 {t_i18n('Cancel')}
               </Button>
@@ -118,7 +118,7 @@ const DisseminationListForm: FunctionComponent<DisseminationListFormProps> = ({
                 color="secondary"
                 onClick={submitForm}
                 disabled={isSubmitting}
-                style={{ marginLeft: theme.spacing(2) }}
+                style={{ marginInlineStart: theme.spacing(2) }}
               >
                 {t_i18n('Create')}
               </Button>

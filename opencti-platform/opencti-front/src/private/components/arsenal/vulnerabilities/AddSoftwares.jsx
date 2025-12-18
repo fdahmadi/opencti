@@ -13,15 +13,15 @@ import Drawer from '../../common/drawer/Drawer';
 
 const styles = (theme) => ({
   createButton: {
-    float: 'left',
+    float: 'inline-start',
     marginTop: -15,
   },
   title: {
-    float: 'left',
+    float: 'inline-start',
   },
   search: {
-    marginLeft: 'auto',
-    marginRight: ' 20px',
+    marginInlineStart: 'auto',
+    marginInlineEnd: ' 20px',
   },
   header: {
     backgroundColor: theme.palette.background.nav,

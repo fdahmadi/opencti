@@ -146,7 +146,7 @@ class ListCards extends Component {
                 <div className={classes.filler} />
                 <div style={{ display: 'flex' }}>
                   {numberOfElements && (
-                    <div style={{ marginRight: '8px', alignSelf: 'center' }}>
+                    <div style={{ marginInlineEnd: '8px', alignSelf: 'center' }}>
                       <strong>{`${numberOfElements.number}${numberOfElements.symbol}`}</strong>{' '}
                       {t('entitie(s)')}
                     </div>

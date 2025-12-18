@@ -56,8 +56,8 @@ const AddPersonaThreatActorIndividualComponent: FunctionComponent<
         header={(
           <div
             style={{
-              marginLeft: 'auto',
-              marginRight: '20px',
+              marginInlineStart: 'auto',
+              marginInlineEnd: '20px',
               display: 'flex',
               flexWrap: 'wrap',
               justifyContent: 'flex-end',
@@ -75,7 +75,7 @@ const AddPersonaThreatActorIndividualComponent: FunctionComponent<
               paginationOptions={paginationOptions}
               paginationKey="Pagination_tai_stixCyberObservables"
               controlledDialStyles={{
-                marginLeft: '10px',
+                marginInlineStart: '10px',
                 marginTop: '5px',
               }}
               inputValue=""

@@ -147,7 +147,7 @@ const AskArianeButton = React.forwardRef((props, ref) => {
         {navOpen ? (
           <GradientButton
             size="small"
-            sx={{ width: '100%', paddingLeft: '8px' }}
+            sx={{ width: '100%', paddingInlineStart: '8px' }}
             gradientVariant={isCGUStatusPending ? GradientVariant.disabled : GradientVariant.ai}
             onClick={toggleChatbot}
             startIcon={<FiligranIcon icon={LogoXtmOneIcon} size="small" color="ai" style={chatIconStyle} />}
@@ -158,7 +158,7 @@ const AskArianeButton = React.forwardRef((props, ref) => {
         ) : (
           <GradientButton
             size="small"
-            sx={{ margin: '-4px', marginLeft: '-6px', marginTop: '-4px', minWidth: 'auto', paddingLeft: 1, paddingY: theme.spacing(0.5) }}
+            sx={{ margin: '-4px', marginInlineStart: '-6px', marginTop: '-4px', minWidth: 'auto', paddingInlineStart: 1, paddingY: theme.spacing(0.5) }}
             gradientVariant={isCGUStatusPending ? GradientVariant.disabled : GradientVariant.ai}
             onClick={toggleChatbot}
             startIcon={<FiligranIcon icon={LogoXtmOneIcon} size="small" color="ai" style={chatIconStyle} />}

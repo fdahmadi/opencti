@@ -51,7 +51,7 @@ const StixCoreObjectFormsComponent: FunctionComponent<StixCoreObjectFormsCompone
               border: '1px solid',
               borderRadius: '4px',
               padding: '6px',
-              marginLeft: '6px',
+              marginInlineStart: '6px',
             }}
           >
             <AssignmentOutlined />

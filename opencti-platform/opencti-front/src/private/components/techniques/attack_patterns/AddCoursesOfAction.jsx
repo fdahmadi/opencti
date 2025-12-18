@@ -23,11 +23,11 @@ const styles = (theme) => ({
     padding: 0,
   },
   createButton: {
-    float: 'left',
+    float: 'inline-start',
     marginTop: -15,
   },
   title: {
-    float: 'left',
+    float: 'inline-start',
   },
   header: {
     backgroundColor: theme.palette.background.nav,
@@ -94,8 +94,8 @@ class AddCoursesOfAction extends Component {
           header={(
             <div
               style={{
-                marginLeft: 'auto',
-                marginRight: '20px',
+                marginInlineStart: 'auto',
+                marginInlineEnd: '20px',
                 display: 'flex',
                 flexDirection: 'column',
                 alignItems: 'flex-end',

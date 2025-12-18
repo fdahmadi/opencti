@@ -36,20 +36,20 @@ const styles = (theme) => ({
     height: 50,
     minHeight: 50,
     maxHeight: 50,
-    paddingRight: 0,
+    paddingInlineEnd: 0,
   },
   itemText: {
     whiteSpace: 'nowrap',
     overflow: 'hidden',
     textOverflow: 'ellipsis',
-    paddingRight: 10,
+    paddingInlineEnd: 10,
   },
   itemIcon: {
-    marginRight: 0,
+    marginInlineEnd: 0,
     color: theme.palette.primary.main,
   },
   itemIconDisabled: {
-    marginRight: 0,
+    marginInlineEnd: 0,
     color: theme.palette.grey[700],
   },
   buttonExpand: {
@@ -63,8 +63,8 @@ const styles = (theme) => ({
       theme.palette.mode === 'dark'
         ? 'rgba(255, 255, 255, .1)'
         : 'rgba(0, 0, 0, .1)',
-    borderTopLeftRadius: 0,
-    borderTopRightRadius: 0,
+    borderStartStartRadius: 0,
+    borderStartEndRadius: 0,
     '&:hover': {
       backgroundColor:
         theme.palette.mode === 'dark'

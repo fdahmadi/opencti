@@ -25,7 +25,7 @@ import { HandleAddFilter } from '../../../../../utils/hooks/useLocalStorage';
 // Do not use it for new code.
 const useStyles = makeStyles<Theme>((theme) => ({
   item: {
-    paddingLeft: 10,
+    paddingInlineStart: 10,
     height: 50,
   },
   itemIcon: {
@@ -34,11 +34,11 @@ const useStyles = makeStyles<Theme>((theme) => ({
   bodyItem: {
     height: 20,
     fontSize: 13,
-    float: 'left',
+    float: 'inline-start',
     whiteSpace: 'nowrap',
     overflow: 'hidden',
     textOverflow: 'ellipsis',
-    paddingRight: 10,
+    paddingInlineEnd: 10,
   },
   goIcon: {
     position: 'absolute',
@@ -50,9 +50,9 @@ const useStyles = makeStyles<Theme>((theme) => ({
   chipInList: {
     fontSize: 12,
     height: 20,
-    float: 'left',
+    float: 'inline-start',
     width: 100,
-    marginRight: 10,
+    marginInlineEnd: 10,
   },
   chipInList2: {
     ...chipInListBasicStyle,
@@ -61,8 +61,8 @@ const useStyles = makeStyles<Theme>((theme) => ({
   chipInList3: {
     fontSize: 12,
     height: 20,
-    float: 'left',
-    marginRight: 10,
+    float: 'inline-start',
+    marginInlineEnd: 10,
   },
 }));
 

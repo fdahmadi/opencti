@@ -9,7 +9,7 @@ const useStyles = makeStyles(() => ({
   chip: {
     fontSize: 12,
     height: 25,
-    marginRight: 7,
+    marginInlineEnd: 7,
     textTransform: 'uppercase',
     borderRadius: 4,
     width: 80,
@@ -26,7 +26,7 @@ const useStyles = makeStyles(() => ({
     fontSize: 18,
     lineHeight: '18px',
     height: 38,
-    marginLeft: 20,
+    marginInlineStart: 20,
   },
 }));
 

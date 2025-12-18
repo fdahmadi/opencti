@@ -28,7 +28,7 @@ const DangerZoneBlock: FunctionComponent<DangerZoneBlockProps> = ({ title, compo
   if (isSensitive) {
     currentTitle = (
       <>
-        {title}<DangerZoneChip style={{ marginTop: 0, marginLeft: 8 }} />
+        {title}<DangerZoneChip style={{ marginTop: 0, marginInlineStart: 8 }} />
       </>
     );
   }
@@ -107,8 +107,8 @@ const DangerZoneBlock: FunctionComponent<DangerZoneBlockProps> = ({ title, compo
           marginTop: theme.spacing(-1.1),
           marginBottom: !title ? theme.spacing(0.5) : 0,
           background: theme.palette.background.default,
-          paddingLeft: theme.spacing(1),
-          paddingRight: theme.spacing(1),
+          paddingInlineStart: theme.spacing(1),
+          paddingInlineEnd: theme.spacing(1),
           fontSize: 10,
           textTransform: 'uppercase',
           fontFamily: '"Geologica", sans-serif',

@@ -31,10 +31,10 @@ import CreateEntityControlledDial from '../../../../components/CreateEntityContr
 const useStyles = makeStyles<Theme>((theme) => ({
   buttons: {
     marginTop: 20,
-    textAlign: 'right',
+    textAlign: 'end',
   },
   button: {
-    marginLeft: theme.spacing(2),
+    marginInlineStart: theme.spacing(2),
   },
 }));
 
@@ -213,7 +213,7 @@ const DecayRuleCreationForm: FunctionComponent<DecayRuleCreationFormProps> = ({
                           fullWidth={true}
                         />
                       </div>
-                      <div style={{ marginLeft: 10 }}>
+                      <div style={{ marginInlineStart: 10 }}>
                         <Tooltip title={t_i18n('Remove this reaction point')}>
                           <IconButton
                             color="primary"

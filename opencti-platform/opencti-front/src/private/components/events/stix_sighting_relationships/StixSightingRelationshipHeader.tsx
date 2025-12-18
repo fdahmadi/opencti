@@ -75,7 +75,7 @@ const StixSightingRelationshipHeader = ({
               size="medium"
               aria-label={t_i18n('Update')}
               onClick={onOpenEdit}
-              style={{ marginLeft: theme.spacing(0.5) }}
+              style={{ marginInlineStart: theme.spacing(0.5) }}
             >
               {t_i18n('Update')}
             </Button>

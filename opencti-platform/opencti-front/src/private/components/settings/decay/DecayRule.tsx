@@ -96,7 +96,7 @@ const DecayRuleComponent = ({ queryRef }: DecayRuleComponentProps) => {
         <div style={{ display: 'flex', flex: 1, alignItems: 'center' }}>
           <Typography
             variant="h1"
-            style={{ marginBottom: 0, marginRight: 20 }}
+            style={{ marginBottom: 0, marginInlineEnd: 20 }}
           >
             {decayRule.name}
           </Typography>

@@ -91,7 +91,7 @@ const ExternalReferenceCreation: FunctionComponent<ExternalReferenceCreationProp
 }) => {
   const { t_i18n } = useFormatter();
   const theme = useTheme();
-  const buttonStyle = { marginLeft: theme.spacing(2) };
+  const buttonStyle = { marginInlineStart: theme.spacing(2) };
 
   const [open, setOpen] = useState(false);
 
@@ -259,7 +259,7 @@ const ExternalReferenceCreation: FunctionComponent<ExternalReferenceCreationProp
                   rows="4"
                   style={{ marginTop: 20 }}
                 />
-                <div style={{ marginTop: 20, textAlign: 'right' }}>
+                <div style={{ marginTop: 20, textAlign: 'end' }}>
                   <Button
                     variant="contained"
                     onClick={handleReset}

@@ -52,14 +52,14 @@ const StixCoreRelationshipCreationHeaderButtons: FunctionComponent<
           isFromBulkRelation={undefined}
           defaultMarkingDefinitions={undefined}
           stixDomainObjectTypes={actualTypeFilterValues}
-          controlledDialStyles={{ marginRight: '10px' }}
+          controlledDialStyles={{ marginInlineEnd: '10px' }}
         />
       )}
       {showSCOs && (
         <Button
           onClick={handleOpenCreateObservable}
           variant="contained"
-          style={{ marginRight: '10px' }}
+          style={{ marginInlineEnd: '10px' }}
         >
           {t_i18n('Create an observable')}
         </Button>

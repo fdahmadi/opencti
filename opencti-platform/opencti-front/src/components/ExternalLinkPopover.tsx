@@ -58,7 +58,7 @@ const ExternalLinkPopover: FunctionComponent<ExternalLinkPopoverProps> = ({
         <Button onClick={handleCloseExternalLink}>{t_i18n('Cancel')}</Button>
         <Button color="secondary" onClick={handleBrowseExternalLink}>
           {t_i18n('Browse the link')}
-          <OpenInNewOutlined fontSize="small" sx={{ marginLeft: '2px' }} />
+          <OpenInNewOutlined fontSize="small" sx={{ marginInlineStart: '2px' }} />
         </Button>
       </DialogActions>
     </Dialog>

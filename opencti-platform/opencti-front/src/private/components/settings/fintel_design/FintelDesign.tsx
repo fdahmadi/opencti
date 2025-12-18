@@ -120,7 +120,7 @@ const FintelDesignComponent: FunctionComponent<FintelDesignComponentProps> = ({
           </div>
           <div style={{ display: 'flex', alignItems: 'center' }}>
             <div style={{ display: 'flex' }}>
-              <div style={{ marginRight: theme.spacing(0.5) }}>
+              <div style={{ marginInlineEnd: theme.spacing(0.5) }}>
                 {canDelete && (
                   <PopoverMenu>
                     {({ closeMenu }) => (

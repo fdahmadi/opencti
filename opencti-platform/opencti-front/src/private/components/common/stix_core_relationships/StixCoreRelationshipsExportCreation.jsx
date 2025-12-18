@@ -40,7 +40,7 @@ const styles = () => ({
     zIndex: 2000,
   },
   listIcon: {
-    marginRight: 0,
+    marginInlineEnd: 0,
   },
   item: {
     padding: '0 0 0 10px',
@@ -193,7 +193,7 @@ class StixCoreRelationshipsExportCreationComponent extends Component {
                             <DialogTitle>
                               {t('Generate an export')}
                               <Tooltip title={t('Your max shareable markings will be applied to the content max markings')}>
-                                <InfoOutlined sx={{ paddingLeft: 1 }} fontSize="small" />
+                                <InfoOutlined sx={{ paddingInlineStart: 1 }} fontSize="small" />
                               </Tooltip>
                             </DialogTitle>
                             <QueryRenderer

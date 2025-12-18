@@ -27,7 +27,7 @@ import { DataColumns } from '../../../../components/list_lines';
 // Do not use it for new code.
 const useStyles = makeStyles<Theme>((theme) => ({
   item: {
-    paddingLeft: 10,
+    paddingInlineStart: 10,
     height: 50,
   },
   itemIcon: {
@@ -36,11 +36,11 @@ const useStyles = makeStyles<Theme>((theme) => ({
   bodyItem: {
     height: 20,
     fontSize: 13,
-    float: 'left',
+    float: 'inline-start',
     whiteSpace: 'nowrap',
     overflow: 'hidden',
     textOverflow: 'ellipsis',
-    paddingRight: 10,
+    paddingInlineEnd: 10,
   },
   itemIconDisabled: {
     color: theme.palette.grey[700],
@@ -48,7 +48,7 @@ const useStyles = makeStyles<Theme>((theme) => ({
   chipInList: {
     fontSize: 12,
     height: 20,
-    float: 'left',
+    float: 'inline-start',
     width: 120,
     textTransform: 'uppercase',
     borderRadius: 4,

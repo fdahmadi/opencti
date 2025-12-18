@@ -73,8 +73,8 @@ const useStyles = makeStyles<Theme>((theme) => ({
       theme.palette.mode === 'dark'
         ? 'rgba(255, 255, 255, .1)'
         : 'rgba(0, 0, 0, .1)',
-    borderTopLeftRadius: 0,
-    borderTopRightRadius: 0,
+    borderStartStartRadius: 0,
+    borderStartEndRadius: 0,
     '&:hover': {
       backgroundColor:
         theme.palette.mode === 'dark'
@@ -252,7 +252,7 @@ const StixCoreObjectExternalReferencesLinesContainer: FunctionComponent<
   };
   return (
     <div style={{ height: '100%' }}>
-      <Typography variant="h4" gutterBottom={true} style={{ float: 'left' }}>
+      <Typography variant="h4" gutterBottom={true} style={{ float: 'inline-start' }}>
         {t_i18n('External references')}
       </Typography>
       <Security

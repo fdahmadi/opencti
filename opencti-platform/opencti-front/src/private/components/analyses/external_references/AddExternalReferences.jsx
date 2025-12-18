@@ -48,7 +48,7 @@ const AddExternalReferences = ({
         aria-label="Add"
         onClick={handleOpen}
         style={{
-          float: 'left',
+          float: 'inline-start',
           marginTop: -15,
         }}
         size="large"
@@ -61,8 +61,8 @@ const AddExternalReferences = ({
         onClose={handleClose}
         header={(
           <div style={{
-            marginLeft: 'auto',
-            marginRight: '20px',
+            marginInlineStart: 'auto',
+            marginInlineEnd: '20px',
             display: 'flex',
             flexWrap: 'wrap',
             alignItems: 'flex-end',

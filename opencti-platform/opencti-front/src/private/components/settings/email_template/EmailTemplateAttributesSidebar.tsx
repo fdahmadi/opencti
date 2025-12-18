@@ -57,7 +57,7 @@ const EmailTemplateAttributesSidebar = () => {
           value={attributesOfTheUserTitle}
           sx={{
             borderBottom: `1px solid ${theme.palette.divider}`,
-            paddingRight: 1,
+            paddingInlineEnd: 1,
             paddingTop: 0,
             gap: 0,
             flexDirection: 'column',
@@ -77,7 +77,7 @@ const EmailTemplateAttributesSidebar = () => {
 
           </div>
 
-          <div style={{ paddingLeft: theme.spacing(3.5) }}>
+          <div style={{ paddingInlineStart: theme.spacing(3.5) }}>
             {userAttributes.map((column) => {
               return (
                 <div
@@ -105,7 +105,7 @@ const EmailTemplateAttributesSidebar = () => {
           value={attributesOfThePlatformTitle}
           sx={{
             borderBottom: `1px solid ${theme.palette.divider}`,
-            paddingRight: 1,
+            paddingInlineEnd: 1,
             gap: 0,
             flexDirection: 'column',
             alignItems: 'stretch',
@@ -124,7 +124,7 @@ const EmailTemplateAttributesSidebar = () => {
             </div>
           </div>
 
-          <div style={{ paddingLeft: theme.spacing(3.5) }}>
+          <div style={{ paddingInlineStart: theme.spacing(3.5) }}>
             {platformAttributes.map((column) => {
               return (
                 <div

@@ -25,11 +25,11 @@ export const renderCardTitle = (entity: { countryFlag?: toEdgesLocated | null | 
               />
             </Tooltip>
           </div>
-          <div style={{ marginLeft: 10 }}>
+          <div style={{ marginInlineStart: 10 }}>
             {entity.name}
           </div>
           {entity.draftVersion && (
-            <DraftChip style={{ marginLeft: 10 }} />
+            <DraftChip style={{ marginInlineStart: 10 }} />
           )}
         </div>
       );
@@ -41,7 +41,7 @@ export const renderCardTitle = (entity: { countryFlag?: toEdgesLocated | null | 
         {entity.name}
       </div>
       {entity.draftVersion && (
-        <DraftChip style={{ marginLeft: 10 }} />
+        <DraftChip style={{ marginInlineStart: 10 }} />
       )}
     </div>
   );

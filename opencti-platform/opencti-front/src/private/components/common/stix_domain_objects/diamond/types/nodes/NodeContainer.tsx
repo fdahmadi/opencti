@@ -56,8 +56,8 @@ const NodeContainer: FunctionComponent<NodeContainerProps> = ({
           width: '100%',
           height: '25px',
           color: theme.palette.primary.main,
-          borderTopLeftRadius: 0,
-          borderTopRightRadius: 0,
+          borderStartStartRadius: 0,
+          borderStartEndRadius: 0,
           backgroundColor:
             theme.palette.mode === 'dark'
               ? 'rgba(255, 255, 255, .1)'

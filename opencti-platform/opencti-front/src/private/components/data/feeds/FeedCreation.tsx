@@ -79,10 +79,10 @@ export const feedCreationAllTypesQuery = graphql`
 const useStyles = makeStyles((theme: Theme) => ({
   buttons: {
     marginTop: 20,
-    textAlign: 'right',
+    textAlign: 'end',
   },
   button: {
-    marginLeft: theme.spacing(2),
+    marginInlineStart: theme.spacing(2),
   },
   container: {
     padding: '10px 20px 20px 20px',
@@ -415,7 +415,7 @@ const FeedCreation: FunctionComponent<FeedCreationFormProps> = (props) => {
                         </AlertTitle>
                         <FormControlLabel
                           control={<Switch />}
-                          style={{ marginLeft: 1 }}
+                          style={{ marginInlineStart: 1 }}
                           name="feed_public"
                           onChange={(_, checked) => setFieldValue('feed_public', checked)}
                           label={t_i18n('Public feed')}

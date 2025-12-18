@@ -38,7 +38,7 @@ const chipStyle: CSSProperties = {
   fontSize: '12px',
   lineHeight: '12px',
   height: '20px',
-  marginRight: '7px',
+  marginInlineEnd: '7px',
   borderRadius: '4px',
   textTransform: 'uppercase',
 };
@@ -49,7 +49,7 @@ const useStyles = makeStyles<Theme>((theme) => ({
   chipInList: {
     fontSize: 12,
     height: 20,
-    float: 'left',
+    float: 'inline-start',
     width: 120,
     textTransform: 'uppercase',
     borderRadius: 4,
@@ -224,7 +224,7 @@ const defaultColumns: DataTableProps['dataColumns'] = {
               width: 20,
               display: 'inline-flex',
               borderRadius: 20,
-              marginRight: 5,
+              marginInlineEnd: 5,
             }}
           />
           <Truncate>{color}</Truncate>
@@ -382,8 +382,8 @@ const defaultColumns: DataTableProps['dataColumns'] = {
         {data.category.entity_types?.map((type: string) => (
           <Tooltip key={`entity_${type}`} title={t_i18n(`entity_${type}`)}>
             <div style={{
-              float: 'left',
-              marginRight: 7,
+              float: 'inline-start',
+              marginInlineEnd: 7,
               overflow: 'hidden',
               whiteSpace: 'nowrap' }}
             >
@@ -1350,7 +1350,7 @@ const defaultColumns: DataTableProps['dataColumns'] = {
               width: 20,
               display: 'inline-flex',
               borderRadius: 20,
-              marginRight: 5,
+              marginInlineEnd: 5,
             }}
           />
           <Truncate>{x_opencti_color}</Truncate>

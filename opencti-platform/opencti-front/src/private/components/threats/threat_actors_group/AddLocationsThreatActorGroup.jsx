@@ -14,12 +14,12 @@ import { insertNode } from '../../../../utils/store';
 
 const styles = () => ({
   createButton: {
-    float: 'left',
+    float: 'inline-start',
     marginTop: '-10px',
   },
   search: {
-    marginLeft: 'auto',
-    marginRight: ' 20px',
+    marginInlineStart: 'auto',
+    marginInlineEnd: ' 20px',
   },
 });
 

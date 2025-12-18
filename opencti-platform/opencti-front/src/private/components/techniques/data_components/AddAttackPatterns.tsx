@@ -18,12 +18,12 @@ import AddAttackPatternsLines, { addAttackPatternsLinesQuery } from './AddAttack
 // Do not use it for new code.
 const useStyles = makeStyles(() => ({
   createButton: {
-    float: 'left',
+    float: 'inline-start',
     marginTop: -15,
   },
   search: {
-    marginLeft: 'auto',
-    marginRight: ' 20px',
+    marginInlineStart: 'auto',
+    marginInlineEnd: ' 20px',
   },
 }));
 

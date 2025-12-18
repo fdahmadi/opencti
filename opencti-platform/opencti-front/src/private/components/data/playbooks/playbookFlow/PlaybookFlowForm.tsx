@@ -340,12 +340,12 @@ const PlaybookFlowForm = ({
                   );
                 },
               )}
-              <div style={{ marginTop: 20, textAlign: 'right' }}>
+              <div style={{ marginTop: 20, textAlign: 'end' }}>
                 <Button
                   variant="contained"
                   onClick={handleReset}
                   disabled={isSubmitting}
-                  style={{ marginRight: theme.spacing(2) }}
+                  style={{ marginInlineEnd: theme.spacing(2) }}
                 >
                   {t_i18n('Cancel')}
                 </Button>

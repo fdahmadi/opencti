@@ -107,7 +107,7 @@ const Message = () => {
                   variant="outlined"
                   size="small"
                   color="error"
-                  sx={{ marginLeft: 2 }}
+                  sx={{ marginInlineStart: 2 }}
                   onClick={handleDialogOpen}
                 >
                   {t_i18n('Request Access')}

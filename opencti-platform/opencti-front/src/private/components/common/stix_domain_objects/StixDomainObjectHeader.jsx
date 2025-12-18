@@ -533,7 +533,7 @@ const StixDomainObjectHeader = (props) => {
                         <Tooltip title={label}>
                           <Chip
                             sx={{
-                              marginRight: '4px',
+                              marginInlineEnd: '4px',
                               fontSize: 12,
                               lineHeight: '12px',
                               height: 28,
@@ -546,7 +546,7 @@ const StixDomainObjectHeader = (props) => {
                       <Tooltip title={label}>
                         <Chip
                           sx={{
-                            marginRight: '4px',
+                            marginInlineEnd: '4px',
                             fontSize: 12,
                             lineHeight: '12px',
                             height: 28,
@@ -587,7 +587,7 @@ const StixDomainObjectHeader = (props) => {
                           placeholder={t_i18n('New alias')}
                           sx={{
                             margin: '4px 15px 0 10px',
-                            float: 'left',
+                            float: 'inline-start',
                           }}
                           onChange={handleChangeNewAlias}
                           value={newAlias}
@@ -783,7 +783,7 @@ const StixDomainObjectHeader = (props) => {
               validationSchema={enableReferences && !isBypassEnforcedRef ? aliasValidation(t_i18n) : null}
             >
               {({ submitForm, isSubmitting, setFieldValue, values }) => (
-                <Form style={{ float: 'right' }}>
+                <Form style={{ float: 'inline-end' }}>
                   <Field
                     component={TextField}
                     variant="standard"
@@ -792,7 +792,7 @@ const StixDomainObjectHeader = (props) => {
                     placeholder={t_i18n('New alias')}
                     sx={{
                       margin: '4px 15px 0 10px',
-                      float: 'left',
+                      float: 'inline-start',
                     }}
                     onChange={handleChangeNewAlias}
                     value={newAlias}
@@ -874,7 +874,7 @@ const StixDomainObjectHeader = (props) => {
                       placeholder={t_i18n('New aliases')}
                       sx={{
                         margin: '4px 15px 0 10px',
-                        float: 'left',
+                        float: 'inline-start',
                       }}
                       onChange={handleChangeNewAlias}
                       value={newAlias}
@@ -918,7 +918,7 @@ const StixDomainObjectHeader = (props) => {
           validationSchema={!isBypassEnforcedRef && aliasValidation(t_i18n)}
         >
           {({ submitForm, isSubmitting, setFieldValue, values }) => (
-            <Form style={{ float: 'right' }}>
+            <Form style={{ float: 'inline-end' }}>
               <CommitMessage
                 handleClose={handleCloseCommitDelete}
                 open={openCommitDelete}

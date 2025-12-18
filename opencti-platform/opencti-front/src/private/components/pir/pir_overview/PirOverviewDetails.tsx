@@ -85,7 +85,7 @@ const PirOverviewDetails = ({ data, dataStream }: PirOverviewDetailsProps) => {
             display: 'flex',
             gap: theme.spacing(3),
             justifyContent: 'space-between',
-            marginRight: theme.spacing(5),
+            marginInlineEnd: theme.spacing(5),
           }}
           >
             <div>
@@ -119,7 +119,7 @@ const PirOverviewDetails = ({ data, dataStream }: PirOverviewDetailsProps) => {
                   <InformationOutline
                     fontSize="small"
                     color="primary"
-                    style={{ cursor: 'default', marginLeft: 8 }}
+                    style={{ cursor: 'default', marginInlineStart: 8 }}
                   />
                 </Tooltip>
               </Typography>
@@ -131,7 +131,7 @@ const PirOverviewDetails = ({ data, dataStream }: PirOverviewDetailsProps) => {
                     height: 25,
                     textTransform: 'uppercase',
                     borderRadius: 4,
-                    marginRight: 5,
+                    marginInlineEnd: 5,
                   }}
                   label={`${n(pir.queue_messages)} ${t_i18n('messages in queue')}`}
                 />

@@ -175,7 +175,7 @@ const StixCoreObjectOpinionsDialogComponent: FunctionComponent<
           aria-label="Label"
           onClick={handleOpen}
           style={{
-            float: 'left',
+            float: 'inline-start',
             margin: '-15px 0 0 -2px',
           }}
           size="large"
@@ -204,7 +204,7 @@ const StixCoreObjectOpinionsDialogComponent: FunctionComponent<
                     {myOpinion ? t_i18n('Update opinion') : t_i18n('Create an opinion')}
                   </DialogTitle>
                   <DialogContent>
-                    <div style={{ marginLeft: 10, marginRight: 10 }}>
+                    <div style={{ marginInlineStart: 10, marginInlineEnd: 10 }}>
                       <Slider
                         sx={{
                           '& .MuiSlider-markLabel': {

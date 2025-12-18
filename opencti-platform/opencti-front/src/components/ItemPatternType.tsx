@@ -20,7 +20,7 @@ const useStyles = makeStyles(() => ({
   chipInList: {
     ...chipInListBasicStyle,
     lineHeight: '12px',
-    marginRight: 7,
+    marginInlineEnd: 7,
     width: 80,
   },
 }));

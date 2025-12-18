@@ -25,10 +25,10 @@ const useStyles = makeStyles<Theme>(() => ({
   },
   buttons: {
     marginTop: 20,
-    textAlign: 'right',
+    textAlign: 'end',
   },
   button: {
-    marginLeft: 10,
+    marginInlineStart: 10,
   },
 }));
 

@@ -43,8 +43,8 @@ const useStyles = makeStyles<Theme>((theme) => ({
       theme.palette.mode === 'dark'
         ? 'rgba(255, 255, 255, .1)'
         : 'rgba(0, 0, 0, .1)',
-    borderTopLeftRadius: 0,
-    borderTopRightRadius: 0,
+    borderStartStartRadius: 0,
+    borderStartEndRadius: 0,
     '&:hover': {
       backgroundColor:
         theme.palette.mode === 'dark'
@@ -56,11 +56,11 @@ const useStyles = makeStyles<Theme>((theme) => ({
     width: '100%',
     height: 20,
     fontSize: 13,
-    float: 'left',
+    float: 'inline-start',
     whiteSpace: 'nowrap',
     overflow: 'hidden',
     textOverflow: 'ellipsis',
-    paddingRight: 10,
+    paddingInlineEnd: 10,
   },
 }));
 

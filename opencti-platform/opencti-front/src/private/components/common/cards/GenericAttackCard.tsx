@@ -72,7 +72,7 @@ const useStyles = makeStyles<Theme>((theme) => ({
   extraColumn: {
     height: 58,
     width: '50%',
-    float: 'left',
+    float: 'inline-start',
     display: '-webkit-box',
     overflow: 'hidden',
     textOverflow: 'ellipsis',
@@ -196,14 +196,14 @@ export const GenericAttackCard: FunctionComponent<GenericAttackCardProps> = ({
             />
           </div>
           <div className={classes.extras}>
-            <div className={classes.extraColumn} style={{ paddingRight: 10 }}>
+            <div className={classes.extraColumn} style={{ paddingInlineEnd: 10 }}>
               <Typography variant="h4">{t_i18n('Known as')}</Typography>
               <Typography variant="body2">
                 {emptyFilled((cardData.aliases || []).join(', '))}
               </Typography>
             </div>
             {entityType === 'Malware' ? (
-              <div className={classes.extraColumn} style={{ paddingLeft: 10 }}>
+              <div className={classes.extraColumn} style={{ paddingInlineStart: 10 }}>
                 <Typography variant="h4">
                   {t_i18n('Correlated intrusion sets')}
                 </Typography>
@@ -212,7 +212,7 @@ export const GenericAttackCard: FunctionComponent<GenericAttackCardProps> = ({
                 </Typography>
               </div>
             ) : (
-              <div className={classes.extraColumn} style={{ paddingLeft: 10 }}>
+              <div className={classes.extraColumn} style={{ paddingInlineStart: 10 }}>
                 <Typography variant="h4">{t_i18n('Used malware')}</Typography>
                 <Typography variant="body2">
                   {emptyFilled(usedMalware)}
@@ -222,13 +222,13 @@ export const GenericAttackCard: FunctionComponent<GenericAttackCardProps> = ({
             <div className="clearfix" />
           </div>
           <div className={classes.extras}>
-            <div className={classes.extraColumn} style={{ paddingRight: 10 }}>
+            <div className={classes.extraColumn} style={{ paddingInlineEnd: 10 }}>
               <Typography variant="h4">{t_i18n('Targeted countries')}</Typography>
               <Typography variant="body2">
                 {emptyFilled(targetedCountries)}
               </Typography>
             </div>
-            <div className={classes.extraColumn} style={{ paddingLeft: 10 }}>
+            <div className={classes.extraColumn} style={{ paddingInlineStart: 10 }}>
               <Typography variant="h4">{t_i18n('Targeted sectors')}</Typography>
               <Typography variant="body2">
                 {emptyFilled(targetedSectors)}
@@ -313,7 +313,7 @@ export const GenericAttackCardDummy = () => {
             />
           </div>
           <div className={classes.extras}>
-            <div className={classes.extraColumn} style={{ paddingRight: 10 }}>
+            <div className={classes.extraColumn} style={{ paddingInlineEnd: 10 }}>
               <Skeleton
                 animation="wave"
                 variant="rectangular"
@@ -327,7 +327,7 @@ export const GenericAttackCardDummy = () => {
                 style={{ marginBottom: 10 }}
               />
             </div>
-            <div className={classes.extraColumn} style={{ paddingLeft: 10 }}>
+            <div className={classes.extraColumn} style={{ paddingInlineStart: 10 }}>
               <Skeleton
                 animation="wave"
                 variant="rectangular"

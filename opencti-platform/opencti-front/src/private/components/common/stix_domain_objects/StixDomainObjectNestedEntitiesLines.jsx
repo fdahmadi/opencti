@@ -18,24 +18,24 @@ import ItemEntityType from '../../../../components/ItemEntityType';
 
 const styles = (theme) => ({
   item: {
-    paddingLeft: 10,
+    paddingInlineStart: 10,
     height: 50,
   },
   itemIcon: {
     color: theme.palette.primary.main,
   },
   itemHead: {
-    paddingLeft: 10,
+    paddingInlineStart: 10,
     textTransform: 'uppercase',
   },
   bodyItem: {
     height: 20,
     fontSize: 13,
-    float: 'left',
+    float: 'inline-start',
     whiteSpace: 'nowrap',
     overflow: 'hidden',
     textOverflow: 'ellipsis',
-    paddingRight: 10,
+    paddingInlineEnd: 10,
   },
   goIcon: {
     position: 'absolute',

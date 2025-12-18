@@ -69,7 +69,7 @@ const UploadImport = ({
           variant={variant}
           aria-label={title}
           title={title}
-          sx={style ?? { marginLeft: theme.spacing(1) }}
+          sx={style ?? { marginInlineStart: theme.spacing(1) }}
         >
           <div style={{ display: 'flex' }}>
             {title}

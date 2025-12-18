@@ -38,11 +38,11 @@ const useStyles = makeStyles<Theme>((theme) => ({
   },
   bodyItem: {
     fontSize: 13,
-    float: 'left',
+    float: 'inline-start',
     whiteSpace: 'nowrap',
     overflow: 'hidden',
     textOverflow: 'ellipsis',
-    paddingRight: 10,
+    paddingInlineEnd: 10,
   },
   itemIconDisabled: {
     color: theme.palette.grey?.[700],
@@ -609,7 +609,7 @@ const SimpleStixObjectOrStixRelationshipStixCoreRelationshipLine = ({
             + (data.x_opencti_inferences?.[0]?.rule.name ?? '')
           }
         >
-          <AutoFix fontSize="small" style={{ marginLeft: -30 }} />
+          <AutoFix fontSize="small" style={{ marginInlineStart: -30 }} />
         </Tooltip>
       ) : (
         <Security needs={[KNOWLEDGE_KNUPDATE]}>

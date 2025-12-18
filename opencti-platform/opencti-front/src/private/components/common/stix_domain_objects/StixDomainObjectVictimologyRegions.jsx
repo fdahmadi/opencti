@@ -23,14 +23,14 @@ const styles = (theme) => ({
     color: theme.palette.primary.main,
   },
   nested: {
-    paddingLeft: theme.spacing(4),
+    paddingInlineStart: theme.spacing(4),
   },
   subnested: {
-    paddingLeft: theme.spacing(8),
+    paddingInlineStart: theme.spacing(8),
   },
   export: {
-    float: 'right',
-    marginLeft: 5,
+    float: 'inline-end',
+    marginInlineStart: 5,
   },
 });
 
@@ -61,7 +61,7 @@ class StixDomainObjectVictimologyRegionsComponent extends Component {
     return (
       <div style={{ marginTop: -10 }}>
         <SearchInput variant="small" onSubmit={this.handleSearch.bind(this)} />
-        <div style={{ float: 'right', marginTop: -5 }}>
+        <div style={{ float: 'inline-end', marginTop: -5 }}>
           <Tooltip title={t('Map view')}>
             <IconButton
               color={currentView === 'map' ? 'secondary' : 'primary'}

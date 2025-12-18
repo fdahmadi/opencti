@@ -40,10 +40,10 @@ interface StreamCollectionCreationForm {
 const useStyles = makeStyles<Theme>((theme) => ({
   buttons: {
     marginTop: 20,
-    textAlign: 'right',
+    textAlign: 'end',
   },
   button: {
-    marginLeft: theme.spacing(2),
+    marginInlineStart: theme.spacing(2),
   },
   alert: {
     width: '100%',
@@ -180,7 +180,7 @@ const StreamCollectionCreation: FunctionComponent<StreamCollectionCreationProps>
                 </AlertTitle>
                 <FormControlLabel
                   control={<Switch />}
-                  style={{ marginLeft: 1 }}
+                  style={{ marginInlineStart: 1 }}
                   name="stream_public"
                   onChange={(_, checked) => setFieldValue('stream_public', checked)}
                   label={t_i18n('Public stream')}

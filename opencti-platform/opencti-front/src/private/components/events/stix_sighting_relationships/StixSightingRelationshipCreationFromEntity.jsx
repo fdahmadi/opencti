@@ -367,7 +367,7 @@ const StixSightingRelationshipCreationFromEntity = ({
           >
             <Close fontSize="small" color="primary" />
           </IconButton>
-          <Typography variant="h6" style={{ float: 'left' }}>
+          <Typography variant="h6" style={{ float: 'inline-start' }}>
             {t_i18n('Create a sighting')}
           </Typography>
           <StixDomainObjectCreation
@@ -375,7 +375,7 @@ const StixSightingRelationshipCreationFromEntity = ({
             inputValue={search}
             paginationOptions={stixDomainObjectsPaginationOptions}
             stixDomainObjectTypes={stixCoreObjectTypes}
-            controlledDialStyles={{ float: 'right' }}
+            controlledDialStyles={{ float: 'inline-end' }}
             controlledDialSize="small"
           />
           <div className="clearfix" />
@@ -393,7 +393,7 @@ const StixSightingRelationshipCreationFromEntity = ({
               )}
             </Alert>
           )}
-          <div style={{ float: 'left', marginLeft: 15, marginTop: 15 }}>
+          <div style={{ float: 'inline-start', marginInlineStart: 15, marginTop: 15 }}>
             <SearchInput
               variant="inDrawer"
               keyword={search}
@@ -469,7 +469,7 @@ const StixSightingRelationshipCreationFromEntity = ({
             color="secondary"
             aria-label="Label"
             onClick={handleOpen}
-            style={{ float: 'left', margin: '-15px 0 0 -2px' }}
+            style={{ float: 'inline-start', margin: '-15px 0 0 -2px' }}
             size="large"
           >
             <Add fontSize="small" />

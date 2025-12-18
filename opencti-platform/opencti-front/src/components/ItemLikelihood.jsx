@@ -10,7 +10,7 @@ import { chipInListBasicStyle } from '../utils/chipStyle';
 const styles = () => ({
   chip: {
     fontSize: 12,
-    marginRight: 7,
+    marginInlineEnd: 7,
     borderRadius: 4,
     width: 120,
   },

@@ -77,7 +77,7 @@ const StatCard: React.FC<StatCardProps> = ({ title, value, change, icon, isPosit
           <Box
             sx={{
               color: theme.palette.text?.secondary,
-              marginRight: 2,
+              marginInlineEnd: 2,
               display: 'flex',
               alignItems: 'center',
               flexShrink: 0,
@@ -127,9 +127,9 @@ const StatCard: React.FC<StatCardProps> = ({ title, value, change, icon, isPosit
               >
                 {Math.abs(change)}%
                 {isPositive ? (
-                  <ArrowUpward sx={{ fontSize: '0.875rem', marginLeft: 0.5 }} />
+                  <ArrowUpward sx={{ fontSize: '0.875rem', marginInlineStart: 0.5 }} />
                 ) : (
-                  <ArrowDownward sx={{ fontSize: '0.875rem', marginLeft: 0.5 }} />
+                  <ArrowDownward sx={{ fontSize: '0.875rem', marginInlineStart: 0.5 }} />
                 )}
               </Box>
             </Box>
@@ -862,8 +862,8 @@ const ChatInterface: React.FC = () => {
                     backgroundColor: theme.palette.primary?.main || '#1976d2',
                     color: '#ffffff',
                     borderRadius: 0,
-                    borderTopLeftRadius: 4,
-                    borderBottomLeftRadius: 4,
+                    borderStartStartRadius: 4,
+                    borderEndStartRadius: 4,
                     '&:hover': {
                       backgroundColor: theme.palette.primary?.dark || '#1565c0',
                     },
@@ -880,8 +880,8 @@ const ChatInterface: React.FC = () => {
                     backgroundColor: theme.palette.primary?.main || '#1976d2',
                     color: '#ffffff',
                     borderRadius: 0,
-                    borderTopRightRadius: 4,
-                    borderBottomRightRadius: 4,
+                    borderStartEndRadius: 4,
+                    borderEndEndRadius: 4,
                     borderLeft: '1px solid rgba(255, 255, 255, 0.2)',
                     '&:hover': {
                       backgroundColor: theme.palette.primary?.dark || '#1565c0',
@@ -991,7 +991,7 @@ const ChatListItem: React.FC<{ chat: ChatItem }> = ({ chat }) => {
           </Typography>
         }
       />
-      <Typography variant="caption" sx={{ fontSize: '0.75rem', color: theme.palette.text?.secondary, marginLeft: 1 }}>
+      <Typography variant="caption" sx={{ fontSize: '0.75rem', color: theme.palette.text?.secondary, marginInlineStart: 1 }}>
         {chat.time}
       </Typography>
     </ListItem>

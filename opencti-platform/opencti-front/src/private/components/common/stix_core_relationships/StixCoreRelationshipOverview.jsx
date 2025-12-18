@@ -143,8 +143,8 @@ const styles = (theme) => ({
       theme.palette.mode === 'dark'
         ? 'rgba(255, 255, 255, .1)'
         : 'rgba(0, 0, 0, .1)',
-    borderTopLeftRadius: 0,
-    borderTopRightRadius: 0,
+    borderStartStartRadius: 0,
+    borderStartEndRadius: 0,
     '&:hover': {
       backgroundColor:
         theme.palette.mode === 'dark'
@@ -247,7 +247,7 @@ class StixCoreRelationshipContainer extends Component {
           classes={{ container: classes.gridContainer }}
         >
           <Grid item xs={6}>
-            <Typography variant="h4" gutterBottom={true} sx={{ float: 'left' }}>
+            <Typography variant="h4" gutterBottom={true} sx={{ float: 'inline-start' }}>
               {t('Relationship')}{stixCoreRelationship.draftVersion && (<DraftChip />)}
             </Typography>
             {!stixCoreRelationship.is_inferred && (
@@ -256,7 +256,7 @@ class StixCoreRelationshipContainer extends Component {
                   color="primary"
                   onClick={this.handleOpenEdition.bind(this)}
                   size="large"
-                  sx={{ margin: '-15px 0px 0px -2px', float: 'left' }}
+                  sx={{ margin: '-15px 0px 0px -2px', float: 'inline-start' }}
                 >
                   <EditOutlined fontSize="small" />
                 </IconButton>
@@ -637,7 +637,7 @@ class StixCoreRelationshipContainer extends Component {
 StixCoreRelationshipContainer.propTypes = {
   entityId: PropTypes.string,
   stixCoreRelationship: PropTypes.object,
-  paddingRight: PropTypes.bool,
+  paddingInlineEnd: PropTypes.bool,
   classes: PropTypes.object,
   t: PropTypes.func,
   nsdt: PropTypes.func,

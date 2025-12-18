@@ -1,11 +1,23 @@
-import React, { FunctionComponent } from 'react';
+import React, { FunctionComponent, useContext, useMemo } from 'react';
 import { createFragmentContainer, graphql } from 'react-relay';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import { ThemeOptions } from '@mui/material/styles/createTheme';
 import themeDark from './ThemeDark';
 import themeLight from './ThemeLight';
-import { useDocumentFaviconModifier, useDocumentThemeModifier } from '../utils/hooks/useDocumentModifier';
+import { useDocumentFaviconModifier, useDocumentThemeModifier, useDocumentDirectionModifier } from '../utils/hooks/useDocumentModifier';
 import { AppThemeProvider_settings$data } from './__generated__/AppThemeProvider_settings.graphql';
+import rtlPlugin from 'stylis-plugin-rtl';
+import createCache from '@emotion/cache';
+import { CacheProvider } from '@emotion/react';
+import { prefixer } from 'stylis';
+import { UserContext, UserContextType } from '../utils/hooks/useAuth';
+
+const cacheRTL = createCache({
+  key: 'mui-style-rtl',
+  prepend: true,
+  stylisPlugins: [prefixer, rtlPlugin],
+});
+
 
 interface AppThemeProviderProps {
   children: React.ReactNode;
@@ -85,6 +97,7 @@ const AppThemeProvider: FunctionComponent<AppThemeProviderProps> = ({
   settings,
   activeTheme,
 }) => {
+  const { me } = useContext<UserContextType>(UserContext);
   useDocumentFaviconModifier(settings?.platform_favicon);
 
   const themeToUse = activeTheme || settings.platform_theme;
@@ -106,6 +119,34 @@ const AppThemeProvider: FunctionComponent<AppThemeProviderProps> = ({
   const themeComponent = themeBuilder(appTheme);
   const muiTheme = createTheme(themeComponent as ThemeOptions);
   useDocumentThemeModifier(appTheme.name);
+
+  // RTL support - get language from UserContext or settings
+  // Note: We need to get settings from UserContext since AppThemeProvider_settings doesn't include platform_language
+  const userContext = useContext(UserContext);
+  const userLanguage = me?.language ?? null;
+  const platformLanguage = userContext?.settings?.platform_language ?? null;
+  
+  // Determine current language: user language > platform language > default
+  // Use useMemo to recalculate when UserContext updates
+  const direction: 'rtl' | 'ltr' = useMemo(() => {
+    let currentLang = 'en-us';
+    if (userLanguage && userLanguage !== 'auto') {
+      currentLang = userLanguage;
+    } else if (platformLanguage && platformLanguage !== 'auto') {
+      currentLang = platformLanguage;
+    }
+    return currentLang === 'fa-ir' ? 'rtl' : 'ltr';
+  }, [userLanguage, platformLanguage]);
+  
+  useDocumentDirectionModifier(direction);
+
+  if (direction === 'rtl') {
+    return (
+      <CacheProvider value={cacheRTL}>
+        <ThemeProvider theme={muiTheme}>{children}</ThemeProvider>
+      </CacheProvider>
+    );
+  }
 
   return <ThemeProvider theme={muiTheme}>{children}</ThemeProvider>;
 };

@@ -29,10 +29,10 @@ const styles = (theme) => ({
     color: theme.palette.primary.main,
   },
   nested: {
-    paddingLeft: theme.spacing(4),
+    paddingInlineStart: theme.spacing(4),
   },
   subnested: {
-    paddingLeft: theme.spacing(8),
+    paddingInlineStart: theme.spacing(8),
   },
 });
 
@@ -322,7 +322,7 @@ class StixDomainObjectVictimologyRegionsList extends Component {
                           >
                             <AutoFix
                               fontSize="small"
-                              style={{ marginLeft: -30 }}
+                              style={{ marginInlineStart: -30 }}
                             />
                           </Tooltip>
                         ) : (
@@ -446,7 +446,7 @@ class StixDomainObjectVictimologyRegionsList extends Component {
                                     >
                                       <AutoFix
                                         fontSize="small"
-                                        style={{ marginLeft: -30 }}
+                                        style={{ marginInlineStart: -30 }}
                                       />
                                     </Tooltip>
                                   ) : (
@@ -545,7 +545,7 @@ class StixDomainObjectVictimologyRegionsList extends Component {
                                             >
                                               <AutoFix
                                                 fontSize="small"
-                                                style={{ marginLeft: -30 }}
+                                                style={{ marginInlineStart: -30 }}
                                               />
                                             </Tooltip>
                                           ) : (

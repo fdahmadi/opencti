@@ -56,8 +56,8 @@ const AddIndividualsThreatActorIndividualComponent: FunctionComponent<
         header={(
           <div
             style={{
-              marginLeft: 'auto',
-              marginRight: '20px',
+              marginInlineStart: 'auto',
+              marginInlineEnd: '20px',
               display: 'flex',
               flexWrap: 'wrap',
               justifyContent: 'flex-end',

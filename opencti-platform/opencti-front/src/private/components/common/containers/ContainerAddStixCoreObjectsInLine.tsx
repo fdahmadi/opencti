@@ -30,7 +30,7 @@ const ControlledDial = ({ onOpen, title }: ControlledDialProps) => {
   return (
     <Button
       variant="contained"
-      style={{ marginLeft: theme.spacing(0.5) }}
+      style={{ marginInlineStart: theme.spacing(0.5) }}
       aria-label={title}
       size="small"
       onClick={() => onOpen()}
@@ -235,7 +235,7 @@ const ContainerAddStixCoreObjectsInLine: FunctionComponent<ContainerAddStixCoreO
           <Typography variant="subtitle2">
             {showSDOCreation ? t_i18n('Add entities') : t_i18n('Add observables')}
           </Typography>
-          <div style={{ marginRight: '10px' }}>
+          <div style={{ marginInlineEnd: '10px' }}>
             {showSDOCreation && (
               <Button
                 style={{ fontSize: 'small' }}
@@ -250,7 +250,7 @@ const ContainerAddStixCoreObjectsInLine: FunctionComponent<ContainerAddStixCoreO
             )}
             {showSCOCreation && (
               <Button
-                style={{ fontSize: 'small', marginLeft: '3px' }}
+                style={{ fontSize: 'small', marginInlineStart: '3px' }}
                 variant="contained"
                 disableElevation
                 size="small"

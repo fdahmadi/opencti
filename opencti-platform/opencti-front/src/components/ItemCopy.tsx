@@ -22,11 +22,11 @@ const useStyles = makeStyles<Theme>((theme) => ({
   },
   containerWrap: {
     position: 'relative',
-    paddingRight: 18,
+    paddingInlineEnd: 18,
   },
   container: {
     position: 'relative',
-    paddingRight: 18,
+    paddingInlineEnd: 18,
     whiteSpace: 'nowrap',
     overflow: 'hidden',
     textOverflow: 'ellipsis',

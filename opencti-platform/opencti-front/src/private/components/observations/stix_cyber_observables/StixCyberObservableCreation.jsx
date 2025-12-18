@@ -78,15 +78,15 @@ const useStyles = makeStyles((theme) => ({
   },
   buttons: {
     marginTop: 20,
-    textAlign: 'right',
+    textAlign: 'end',
   },
   button: {
-    marginLeft: theme.spacing(2),
+    marginInlineStart: theme.spacing(2),
   },
   header: {
     backgroundColor: theme.palette.mode === 'light' ? theme.palette.background.default : theme.palette.background.nav,
     padding: '10px 0',
-    paddingLeft: '5px',
+    paddingInlineStart: '5px',
     display: 'flex',
     alignItems: 'center',
     gap: '5px',
@@ -1078,7 +1078,7 @@ const StixCyberObservableCreation = ({
             {!isFromBulkRelation && status.type
               ? (
                   <BulkTextModalButton
-                    sx={{ marginRight: 0 }}
+                    sx={{ marginInlineEnd: 0 }}
                     onClick={() => setBulkOpen(true)}
                     title={t_i18n('Create multiple observables')}
                     disabled={!bulkConf}

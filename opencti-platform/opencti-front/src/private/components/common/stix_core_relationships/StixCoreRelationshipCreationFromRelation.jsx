@@ -54,10 +54,10 @@ const styles = (theme) => ({
     zIndex: 1001,
   },
   title: {
-    float: 'left',
+    float: 'inline-start',
   },
   search: {
-    float: 'right',
+    float: 'inline-end',
   },
   header: {
     backgroundColor: theme.palette.background.nav,
@@ -567,7 +567,7 @@ class StixCoreRelationshipCreationFromRelation extends Component {
             color="primary"
             aria-label="Label"
             onClick={this.handleOpen.bind(this)}
-            style={{ float: 'left', margin: '-15px 0 0 -2px' }}
+            style={{ float: 'inline-start', margin: '-15px 0 0 -2px' }}
             size="large"
           >
             <Add fontSize="small" />
@@ -629,7 +629,7 @@ StixCoreRelationshipCreationFromRelation.propTypes = {
   fsd: PropTypes.func,
   variant: PropTypes.string,
   onCreate: PropTypes.func,
-  paddingRight: PropTypes.bool,
+  paddingInlineEnd: PropTypes.bool,
 };
 
 export default R.compose(

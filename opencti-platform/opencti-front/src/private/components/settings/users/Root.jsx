@@ -118,7 +118,7 @@ const RootUserComponent = ({ queryRef, userId, refetch }) => {
   return (
     <Security needs={[SETTINGS_SETACCESSES, VIRTUAL_ORGANIZATION_ADMIN]}>
       {data ? (
-        <div style={{ paddingRight: 200 }}>
+        <div style={{ paddingInlineEnd: 200 }}>
           <AccessesMenu />
           <Breadcrumbs elements={[
             { label: t_i18n('Settings') },
@@ -132,7 +132,7 @@ const RootUserComponent = ({ queryRef, userId, refetch }) => {
               <Typography
                 variant="h1"
                 gutterBottom={true}
-                style={{ float: 'left' }}
+                style={{ float: 'inline-start' }}
               >
                 {data.name}
               </Typography>

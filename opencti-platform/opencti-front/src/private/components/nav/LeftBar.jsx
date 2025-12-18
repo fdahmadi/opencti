@@ -138,7 +138,7 @@ const useStyles = makeStyles((theme) => createStyles({
     color: theme.palette.text.primary,
   },
   menuItem: {
-    paddingRight: 2,
+    paddingInlineEnd: 2,
     height: 35,
     fontWeight: 500,
     fontSize: 14,
@@ -396,7 +396,7 @@ const LeftBar = () => {
                   selected={entry.exact ? location.pathname === entry.link : location.pathname.includes(entry.link)}
                   dense={true}
                   classes={{ root: classes.menuSubItem }}
-                  sx={{ paddingLeft: 3 }}
+                  sx={{ paddingInlineStart: 3 }}
                 >
                   {submenu_show_icons && entry.icon && (
                     <ListItemIcon classes={{ root: classes.menuItemIcon }} style={{ minWidth: 20 }}>

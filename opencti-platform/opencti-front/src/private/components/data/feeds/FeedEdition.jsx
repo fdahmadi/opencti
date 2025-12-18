@@ -57,10 +57,10 @@ const styles = (theme) => ({
   },
   buttons: {
     marginTop: 20,
-    textAlign: 'right',
+    textAlign: 'end',
   },
   button: {
-    marginLeft: theme.spacing(2),
+    marginInlineStart: theme.spacing(2),
   },
   importButton: {
     position: 'absolute',
@@ -76,7 +76,7 @@ const styles = (theme) => ({
     borderBottom: '1px solid #5c5c5c',
   },
   title: {
-    float: 'left',
+    float: 'inline-start',
   },
   step: {
     position: 'relative',
@@ -93,16 +93,16 @@ const styles = (theme) => ({
   },
   stepType: {
     margin: 0,
-    paddingRight: 20,
+    paddingInlineEnd: 20,
     width: '30%',
   },
   stepField: {
     margin: 0,
-    paddingRight: 20,
+    paddingInlineEnd: 20,
     width: '30%',
   },
   stepValues: {
-    paddingRight: 20,
+    paddingInlineEnd: 20,
     margin: 0,
   },
   stepCloseButton: {
@@ -360,7 +360,7 @@ const FeedEditionContainer = (props) => {
                         component={SwitchField}
                         type="checkbox"
                         name="feed_public"
-                        containerstyle={{ marginLeft: 2, marginTop: 20 }}
+                        containerstyle={{ marginInlineStart: 2, marginTop: 20 }}
                         label={t('Public feed')}
                       />
                       {!values.feed_public && (

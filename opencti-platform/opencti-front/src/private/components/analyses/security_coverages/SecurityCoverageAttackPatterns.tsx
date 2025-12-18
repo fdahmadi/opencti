@@ -131,7 +131,7 @@ const SecurityCoverageAttackPatterns = ({
     <div style={{ marginTop: 20 }}>
       <div style={{ display: 'flex', alignItems: 'center', marginBottom: 15, justifyContent: 'space-between' }}>
         <div style={{ display: 'flex', alignItems: 'center' }}>
-          <Typography variant="h4" style={{ whiteSpace: 'nowrap', marginRight: 10 }}>
+          <Typography variant="h4" style={{ whiteSpace: 'nowrap', marginInlineEnd: 10 }}>
             {t_i18n('Attack patterns coverage')}
           </Typography>
           <StixCoreRelationshipCreationFromEntity

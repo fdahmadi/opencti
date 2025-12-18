@@ -29,7 +29,7 @@ interface ContainerHeaderSharedProps {
 // Do not use it for new code.
 const useStyles = makeStyles<Theme>((theme) => ({
   item: {
-    paddingLeft: 10,
+    paddingInlineStart: 10,
     height: 50,
   },
   itemIcon: {
@@ -65,7 +65,7 @@ const StixCoreObjectSubscribers: FunctionComponent<ContainerHeaderSharedProps> =
         color={hasSetAccess ? 'primary' : 'inherit'}
         style={{
           cursor: hasSetAccess ? 'pointer' : 'default',
-          marginRight: 10,
+          marginInlineEnd: 10,
           whiteSpace: 'nowrap',
         }}
         sx={!hasSetAccess ? {

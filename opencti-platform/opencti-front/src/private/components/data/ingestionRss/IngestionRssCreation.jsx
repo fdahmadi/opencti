@@ -29,10 +29,10 @@ const styles = (theme) => ({
   },
   buttons: {
     marginTop: 20,
-    textAlign: 'right',
+    textAlign: 'end',
   },
   button: {
-    marginLeft: theme.spacing(2),
+    marginInlineStart: theme.spacing(2),
   },
   header: {
     backgroundColor: theme.palette.background.nav,
@@ -53,7 +53,7 @@ const styles = (theme) => ({
     padding: '10px 20px 20px 20px',
   },
   title: {
-    float: 'left',
+    float: 'inline-start',
   },
 });
 

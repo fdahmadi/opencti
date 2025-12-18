@@ -44,7 +44,7 @@ const CreateEntityControlledDial: FunctionComponent<CreateEntityControlledDialPr
       aria-label={buttonValue}
       title={buttonValue}
       data-testid={`create-${entityType.toLowerCase()}-button`}
-      sx={style ?? { marginLeft: theme.spacing(1) }}
+      sx={style ?? { marginInlineStart: theme.spacing(1) }}
     >
       {buttonValue}
     </Button>

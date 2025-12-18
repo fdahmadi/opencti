@@ -86,7 +86,7 @@ const styles = (theme) => ({
     padding: 0,
   },
   item: {
-    paddingLeft: 10,
+    paddingInlineStart: 10,
     textTransform: 'uppercase',
   },
   headerItem: {
@@ -100,11 +100,11 @@ const styles = (theme) => ({
     fontSize: 12,
     fontWeight: '700',
     cursor: 'pointer',
-    paddingRight: 10,
+    paddingInlineEnd: 10,
     alignItems: 'center',
   },
   headerItemText: {
-    marginRight: theme.spacing(1),
+    marginInlineEnd: theme.spacing(1),
     whiteSpace: 'nowrap',
     overflow: 'hidden',
     textOverflow: 'ellipsis',
@@ -261,8 +261,8 @@ class ListLines extends Component {
                 <div
                   style={
                     parametersWithPadding
-                      ? { float: 'left', padding: '7px 20px 0 0' }
-                      : { float: 'left', padding: '7px 5px 0 0' }
+                      ? { float: 'inline-start', padding: '7px 20px 0 0' }
+                      : { float: 'inline-start', padding: '7px 5px 0 0' }
                   }
                 >
                   <strong>{`${numberOfElements.number}${numberOfElements.symbol}`}</strong>{' '}

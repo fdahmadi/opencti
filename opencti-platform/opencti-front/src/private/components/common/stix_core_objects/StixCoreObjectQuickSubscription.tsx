@@ -59,13 +59,13 @@ interface InstanceTriggerEditionFormValues {
 // Do not use it for new code.
 const useStyles = makeStyles<Theme>((theme) => ({
   buttons: {
-    textAlign: 'right',
+    textAlign: 'end',
   },
   updateButton: {
-    marginLeft: theme.spacing(2),
+    marginInlineStart: theme.spacing(2),
   },
   deleteButton: {
-    marginLeft: theme.spacing(2),
+    marginInlineStart: theme.spacing(2),
     backgroundColor: '#f44336',
     borderColor: '#f44336',
     color: '#ffffff',
@@ -495,7 +495,7 @@ const StixCoreObjectQuickSubscription: FunctionComponent<
           onClick={() => !disabledInDraft && (triggerUpdate ? handleOpen() : createInstanceTrigger())}
           value="quick-subscription"
           size="small"
-          style={{ marginRight: 3 }}
+          style={{ marginInlineEnd: 3 }}
         >
           <NotificationsOutlined
             fontSize="small"

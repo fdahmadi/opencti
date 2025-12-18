@@ -37,7 +37,7 @@ const useStyles = makeStyles(() => ({
     padding: '0 200px 50px 0',
   },
   title: {
-    float: 'left',
+    float: 'inline-start',
   },
 }));
 
@@ -124,7 +124,7 @@ const CaseHeaderMenu: FunctionComponent<CaseHeaderMenuProps> = ({
       </div>
       <div style={{ display: 'flex', alignItems: 'center' }}>
         <div style={{ display: 'flex' }}>
-          <div style={{ marginRight: theme.spacing(0.5) }}>
+          <div style={{ marginInlineEnd: theme.spacing(0.5) }}>
             <PopoverMenu>
               {({ closeMenu }) => (
                 <Box>

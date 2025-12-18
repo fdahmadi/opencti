@@ -63,29 +63,29 @@ const useStyles = makeStyles<Theme>((theme) => ({
   },
   logoContainer: {
     marginTop: theme.spacing(0.2),
-    paddingLeft: theme.spacing(1),
+    paddingInlineStart: theme.spacing(1),
     minWidth: SMALL_BAR_WIDTH,
   },
   logo: {
     cursor: 'pointer',
     height: 35,
-    marginRight: 3,
+    marginInlineEnd: 3,
   },
   logoCollapsed: {
     cursor: 'pointer',
     height: 35,
-    marginRight: 4,
+    marginInlineEnd: 4,
   },
   barRight: {
-    marginRight: theme.spacing(2),
+    marginInlineEnd: theme.spacing(2),
     height: '100%',
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'end',
-    marginLeft: 'auto',
+    marginInlineStart: 'auto',
   },
   barRightContainer: {
-    float: 'left',
+    float: 'inline-start',
   },
   subtitle: {
     color: theme.palette.text?.secondary,
@@ -307,7 +307,7 @@ const TopBarComponent: FunctionComponent<TopBarProps> = ({
         </div>
         {hasKnowledgeAccess && (
           <div
-            style={{ display: 'flex', marginLeft: theme.spacing(3) }}
+            style={{ display: 'flex', marginInlineStart: theme.spacing(3) }}
           >
             <SearchInput
               onSubmit={handleSearch}
@@ -418,13 +418,13 @@ const TopBarComponent: FunctionComponent<TopBarProps> = ({
                     {(xtmhubStatus === 'registered' || !hasXtmHubAccess) ? (
                       <a className={classes.xtmItem} href={isNotEmptyField(xtmhubUrl) ? xtmhubUrl : 'https://hub.filigran.io'} target="_blank" rel="noreferrer" onClick={handleCloseXtm}>
                         <Badge variant="dot" color={xtmhubStatus === 'registered' ? 'success' : 'warning'}>
-                          <img style={{ width: 200, paddingRight: 8, paddingLeft: 8 }} src={fileUri(theme.palette.mode === 'dark' ? xtmhubDark : xtmhubLight)} alt="XTM Hub" />
+                          <img style={{ width: 200, paddingInlineEnd: 8, paddingInlineStart: 8 }} src={fileUri(theme.palette.mode === 'dark' ? xtmhubDark : xtmhubLight)} alt="XTM Hub" />
                         </Badge>
                       </a>
                     ) : (
                       <Link className={classes.xtmItem} to="/dashboard/settings/experience" onClick={handleCloseXtm}>
                         <Badge variant="dot" color="warning">
-                          <img style={{ width: 200, paddingRight: 8, paddingLeft: 8 }} src={fileUri(theme.palette.mode === 'dark' ? xtmhubDark : xtmhubLight)} alt="XTM Hub" />
+                          <img style={{ width: 200, paddingInlineEnd: 8, paddingInlineStart: 8 }} src={fileUri(theme.palette.mode === 'dark' ? xtmhubDark : xtmhubLight)} alt="XTM Hub" />
                         </Badge>
                       </Link>
                     )}

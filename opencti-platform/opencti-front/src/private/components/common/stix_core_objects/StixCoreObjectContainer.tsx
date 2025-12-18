@@ -168,7 +168,7 @@ const StixCoreObjectContainer = ({ elementId }: StixCoreObjectContainerProps) =>
           onClick={handleToggleAddInContainer(true)}
           value="container"
           size="small"
-          style={{ marginRight: 3 }}
+          style={{ marginInlineEnd: 3 }}
         >
           <MoveToInboxOutlined color="primary" fontSize="small" />
         </ToggleButton>
@@ -256,7 +256,7 @@ const StixCoreObjectContainer = ({ elementId }: StixCoreObjectContainerProps) =>
                 <div style={{ padding: '4px' }}>
                   <ItemIcon type={option.type} />
                 </div>
-                <div style={{ marginLeft: 10 }}>{option.label}</div>
+                <div style={{ marginInlineStart: 10 }}>{option.label}</div>
               </li>
             )}
             disableClearable

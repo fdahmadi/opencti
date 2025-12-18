@@ -638,7 +638,7 @@ const SettingsComponent = ({ queryRef }: SettingsComponentProps) => {
               {() => (
                 <Form>
                   <List style={{ marginTop: -20 }}>
-                    <ListItem divider={true} style={{ paddingRight: 24 }}>
+                    <ListItem divider={true} style={{ paddingInlineEnd: 24 }}>
                       <ListItemText primary={t_i18n('Platform identifier')} />
                       <ItemCopy content={settings.id} variant="inLine" />
                     </ListItem>

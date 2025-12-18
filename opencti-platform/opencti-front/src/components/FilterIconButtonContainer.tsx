@@ -78,8 +78,8 @@ const useStyles = makeStyles<Theme>((theme) => ({
     backgroundColor: theme.palette.action?.selected,
     height: 20,
     padding: '0 8px',
-    marginRight: 5,
-    marginLeft: 5,
+    marginInlineEnd: 5,
+    marginInlineStart: 5,
     cursor: 'pointer',
     '&:hover': {
       backgroundColor: theme.palette.action?.disabled,
@@ -92,8 +92,8 @@ const useStyles = makeStyles<Theme>((theme) => ({
     backgroundColor: theme.palette.action?.selected,
     height: 20,
     padding: '0 8px',
-    marginRight: 5,
-    marginLeft: 5,
+    marginInlineEnd: 5,
+    marginInlineStart: 5,
   },
   chipLabel: {
     lineHeight: '32px',

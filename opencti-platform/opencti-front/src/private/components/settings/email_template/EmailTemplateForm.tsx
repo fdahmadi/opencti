@@ -110,7 +110,7 @@ const EmailTemplateForm: FunctionComponent<EmailTemplateFormProps> = ({
             style={{ marginTop: theme.spacing(2) }}
           />
           {!isEdition && (
-            <div style={{ marginTop: theme.spacing(2), textAlign: 'right' }}>
+            <div style={{ marginTop: theme.spacing(2), textAlign: 'end' }}>
               <Button
                 variant="contained"
                 onClick={() => {
@@ -118,7 +118,7 @@ const EmailTemplateForm: FunctionComponent<EmailTemplateFormProps> = ({
                   onClose();
                 }}
                 disabled={isSubmitting}
-                style={{ marginLeft: theme.spacing(2) }}
+                style={{ marginInlineStart: theme.spacing(2) }}
               >
                 {t_i18n('Cancel')}
               </Button>
@@ -127,7 +127,7 @@ const EmailTemplateForm: FunctionComponent<EmailTemplateFormProps> = ({
                 color="secondary"
                 onClick={submitForm}
                 disabled={isSubmitting}
-                style={{ marginLeft: theme.spacing(2) }}
+                style={{ marginInlineStart: theme.spacing(2) }}
               >
                 {t_i18n('Create')}
               </Button>

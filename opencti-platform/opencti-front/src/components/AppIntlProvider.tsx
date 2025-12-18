@@ -5,7 +5,7 @@ import { AdapterDateFns } from '@mui/x-date-pickers/AdapterDateFnsV3';
 import { LocalizationProvider } from '@mui/x-date-pickers';
 import { createFragmentContainer, graphql } from 'react-relay';
 import { Locale } from 'date-fns/locale/types';
-import { de, enUS, es, fr, it, ja, ko, zhCN, ru } from 'date-fns/locale';
+import { de, enUS, es, fr, it, ja, ko, zhCN, ru, faIR } from 'date-fns/locale';
 import locale, { DEFAULT_LANG } from '../utils/BrowserLanguage';
 import { UserContext } from '../utils/hooks/useAuth';
 import { AppIntlProvider_settings$data } from './__generated__/AppIntlProvider_settings.graphql';
@@ -18,6 +18,7 @@ import messages_ja_front from '../../lang/front/ja.json';
 import messages_ko_front from '../../lang/front/ko.json';
 import messages_zh_front from '../../lang/front/zh.json';
 import messages_ru_front from '../../lang/front/ru.json';
+import messages_fa_front from '../../lang/front/fa.json';
 import messages_de_back from '../../lang/back/de.json';
 import messages_en_back from '../../lang/back/en.json';
 import messages_es_back from '../../lang/back/es.json';
@@ -27,12 +28,14 @@ import messages_ja_back from '../../lang/back/ja.json';
 import messages_ko_back from '../../lang/back/ko.json';
 import messages_zh_back from '../../lang/back/zh.json';
 import messages_ru_back from '../../lang/back/ru.json';
+import messages_fa_back from '../../lang/back/fa.json';
 
 import { useDocumentLangModifier } from '../utils/hooks/useDocumentModifier';
 
 type PlatformLang
   = | 'de-de'
     | 'en-us'
+    | 'fa-ir'
     | 'es-es'
     | 'fr-fr'
     | 'it-it'
@@ -44,6 +47,7 @@ type PlatformLang
 const localeMap: Record<PlatformLang, Locale> = {
   'de-de': de,
   'en-us': enUS,
+  'fa-ir': faIR,
   'es-es': es,
   'fr-fr': fr,
   'it-it': it,
@@ -64,12 +68,14 @@ const i18n: { messages: Record<PlatformLang, Record<string, string>> } = {
     'ko-kr': { ...messages_ko_back, ...messages_ko_front },
     'zh-cn': { ...messages_zh_back, ...messages_zh_front },
     'ru-ru': { ...messages_ru_back, ...messages_ru_front },
+    'fa-ir': { ...messages_fa_back, ...messages_fa_front },
   },
 };
 
 export const availableLanguage: { value: PlatformLang; label: string; name: string }[] = [
   { value: 'de-de', label: 'Deutsch', name: 'German' },
   { value: 'en-us', label: 'English', name: 'English' },
+  { value: 'fa-ir', label: 'فارسی', name: 'Persian' },
   { value: 'es-es', label: 'Español', name: 'Spanish' },
   { value: 'fr-fr', label: 'Français', name: 'French' },
   { value: 'it-it', label: 'Italiano', name: 'Italian' },

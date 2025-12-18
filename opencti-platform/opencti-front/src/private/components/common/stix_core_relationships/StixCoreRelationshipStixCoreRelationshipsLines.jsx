@@ -52,7 +52,7 @@ class StixCoreRelationshipStixCoreRelationshipsLinesContainer extends Component 
     const { t, classes, entityId, data, paginationOptions } = this.props;
     return (
       <div style={{ height: '100%' }}>
-        <Typography variant="h4" gutterBottom={true} style={{ float: 'left' }}>
+        <Typography variant="h4" gutterBottom={true} style={{ float: 'inline-start' }}>
           {t('Linked entities')}
         </Typography>
         <Security
@@ -96,7 +96,7 @@ class StixCoreRelationshipStixCoreRelationshipsLinesContainer extends Component 
                       >
                         <AutoFix
                           fontSize="small"
-                          style={{ marginLeft: -30 }}
+                          style={{ marginInlineStart: -30 }}
                           color="secondary"
                         />
                       </Tooltip>

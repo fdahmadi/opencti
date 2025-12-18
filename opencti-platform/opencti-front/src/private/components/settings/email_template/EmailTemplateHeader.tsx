@@ -60,7 +60,7 @@ const EmailTemplateHeader = ({ data }: EmailTemplateHeaderProps) => {
       <Breadcrumbs elements={breadcrumb} />
 
       <div style={{ display: 'flex', gap: theme.spacing(1), justifyContent: 'right', alignItems: 'center', position: 'relative' }}>
-        <Typography variant="h1" sx={{ marginRight: 'auto' }}>
+        <Typography variant="h1" sx={{ marginInlineEnd: 'auto' }}>
           {template.name}
         </Typography>
         <EmailTemplateTestSend templateId={template.id} />

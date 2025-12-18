@@ -102,7 +102,7 @@ const RootInfrastructureComponent = ({ queryRef, infrastructureId }) => {
     <CreateRelationshipContextProvider>
       {infrastructure ? (
         <div
-          style={{ paddingRight: paddingRightValue() }}
+          style={{ paddingInlineEnd: paddingRightValue() }}
           data-testid="infrastructure-details-page"
         >
           <Breadcrumbs elements={[

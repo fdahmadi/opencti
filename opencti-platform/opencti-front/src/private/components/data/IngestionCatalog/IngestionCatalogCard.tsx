@@ -99,7 +99,7 @@ const ConnectorActions = ({
         color={connectorMetadata.color}
       />
       <Stack
-        sx={{ marginLeft: '0!important' }}
+        sx={{ marginInlineStart: '0!important' }}
         direction="row"
         gap={1}
         onClick={(e) => e.stopPropagation()}
@@ -111,7 +111,7 @@ const ConnectorActions = ({
               onClick={onClickDeploy}
             />
           ) : (
-            <Box sx={{ '& .MuiButton-root': { marginLeft: 0 } }}>
+            <Box sx={{ '& .MuiButton-root': { marginInlineStart: 0 } }}>
               {/** FIXME: remove marginLeft in EnterpriseEditionButton * */}
               <EnterpriseEditionButton title="Deploy" />
             </Box>

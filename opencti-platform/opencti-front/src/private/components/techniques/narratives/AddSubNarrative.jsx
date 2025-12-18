@@ -13,7 +13,7 @@ import NarrativeCreation from './NarrativeCreation';
 
 const styles = () => ({
   createButton: {
-    float: 'left',
+    float: 'inline-start',
     marginTop: -15,
   },
 });
@@ -58,8 +58,8 @@ class AddSubNarrative extends Component {
           title={t('Add subnarratives')}
           header={(
             <div style={{
-              marginLeft: 'auto',
-              marginRight: '20px',
+              marginInlineStart: 'auto',
+              marginInlineEnd: '20px',
               display: 'flex',
               flexDirection: 'column',
               alignItems: 'flex-end',
