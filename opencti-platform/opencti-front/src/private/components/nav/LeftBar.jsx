@@ -44,6 +44,7 @@ import {
   SurroundSoundOutlined,
   TaskAltOutlined,
   TrackChanges,
+  SearchOutlined,
   VisibilityOutlined,
   WebAssetOutlined,
   WifiTetheringOutlined,
@@ -627,6 +628,27 @@ const LeftBar = () => {
               </StyledTooltip>
             )}
           </Security>
+          {!draftContext && (
+            <StyledTooltip title={!navOpen && t_i18n('Ressa Search')} placement="right">
+              <MenuItem
+                component={Link}
+                to="/dashboard/ressa-search"
+                selected={location.pathname.includes('/dashboard/ressa-search')}
+                dense={true}
+                classes={{ root: classes.menuItem }}
+              >
+                <ListItemIcon classes={{ root: classes.menuItemIcon }} style={{ minWidth: 20 }}>
+                  <SearchOutlined />
+                </ListItemIcon>
+                {navOpen && (
+                  <ListItemText
+                    classes={{ primary: classes.menuItemText }}
+                    primary={t_i18n('Ressa Search')}
+                  />
+                )}
+              </MenuItem>
+            </StyledTooltip>
+          )}
         </MenuList>
         <Divider />
         <Security needs={[KNOWLEDGE]}>
